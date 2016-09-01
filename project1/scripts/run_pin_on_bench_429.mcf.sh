@@ -1,2 +1,0 @@
-#!/bin/bash
-/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin -t /home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/source/tools/ManualExamples/obj-intel64/inscount0.so -o ../../../project1_pintools_run/429.mcf/pin_output/429.mcf_inp.in_inscount0.out  -- /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/429.mcf/exe/mcf_base.gcc46-64bit ../../../project1_pintools_run/429.mcf/bench_input/inp.in

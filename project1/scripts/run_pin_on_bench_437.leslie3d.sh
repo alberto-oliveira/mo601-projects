@@ -1,2 +1,0 @@
-#!/bin/bash
-/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin -t /home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/source/tools/ManualExamples/obj-intel64/inscount0.so -o ../../../project1_pintools_run/437.leslie3d/pin_output/437.leslie3d_leslie3d.in_inscount0.out  -- /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/437.leslie3d/exe/leslie3d_base.gcc46-64bit ../../../project1_pintools_run/437.leslie3d/bench_input/leslie3d.in
