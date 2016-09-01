@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin -t /home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/source/tools/ManualExamples/obj-intel64/inscount0.so -o ../../../project1_pintools_run/434.zeusmp/pin_output/434.zeusmp_zmp_inp_inscount0.out  -- /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/434.zeusmp/exe/zeusmp_base.gcc46-64bit ../../../project1_pintools_run/434.zeusmp/bench_input/zmp_inp

@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin -t /home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/source/tools/ManualExamples/obj-intel64/inscount0.so -o ../../../project1_pintools_run/436.cactusADM/pin_output/436.cactusADM_benchADM.par_inscount0.out  -- /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/436.cactusADM/exe/cactusADM_base.gcc46-64bit ../../../project1_pintools_run/436.cactusADM/bench_input/benchADM.par
