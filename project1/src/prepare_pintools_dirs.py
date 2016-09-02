@@ -10,6 +10,8 @@ import shutil
 
 #pin_path = "/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin"
 
+accepted_extensions = ['in', 'inp', 'pl', 't', 'jpeg', 'source', 'html', 'jpg', ]
+
 def safe_create_dir(dir):
     """ Safely creates dir, checking if it already exists.
 
