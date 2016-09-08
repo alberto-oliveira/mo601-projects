@@ -1,3 +1,5 @@
 (1) Hasabnis, Niranjan, and R. Sekar. "Lifting assembly to intermediate representation: A novel approach leveraging compilers." Proceedings of the Twenty-First International Conference on Architectural Support for Programming Languages and Operating Systems. ACM, 2016.
 
-(2) LiKamWa, Robert, et al. "RedEye: Analog ConvNet Image Sensor Architecture for Continuous Mobile Vision." Proceedings of ISCA. Vol. 43. 2016.
+(2) LiKamWa, Robert et al. "RedEye: Analog ConvNet Image Sensor Architecture for Continuous Mobile Vision." Proceedings of ISCA. Vol. 43. 2016.
+
+(3) Mullapudi, Ravi Teja, Vinay Vasista, and Uday Bondhugula. "Polymage: Automatic optimization for image processing pipelines." ACM SIGPLAN Notices. Vol. 50. No. 4. ACM, 2015.

@@ -1,0 +1,521 @@
+runspec v6674 - Copyright 1999-2011 Standard Performance Evaluation Corporation
+Using 'linux-suse10-amd64' tools
+Reading MANIFEST... 22481 files
+Loading runspec modules................
+runspec v6674 started at Tue Sep  6 22:00:02 2016 on "x03.recod"
+runspec is: /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec
+runspec: runspec --config /home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg --size ref --iterations 1 --noreportable --verbose 35 483.xalancbmk
+toolset: linux-suse10-amd64
+
+Locating benchmarks...found 31 benchmarks in 6 benchsets.
+Reading config file '/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg'
+Running "specperl /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo" to gather system information.
+Read 60 total lines from the sysinfo program.
+Read 59 usable lines from the sysinfo program.
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec line 169):
+ - No variables changed
+ - Variables available for interpolation that were not in the last list:
+    (From config) $OS = "unix"
+    (From config) $absolutely_no_locking = "0"
+    (From config) $action = "validate"
+    (From config) $allow_extension_override = "0"
+    (From config) $backup_config = "1"
+    (From config) $basepeak = "yes"
+    (From config) $benchdir = "benchspec"
+    (From config) @bind = ( numactl -m 0 --physcpubind=0, numactl -m 0 --physcpubind=1, numactl -m 0 --physcpubind=2, numactl -m 0 --physcpubind=3, numactl -m 1 --physcpubind=4, numactl -m 1 --physcpubind=5, numactl -m 1 --physcpubind=6, numactl -m 1 --physcpubind=7 )
+    (From config) $bindir = "exe"
+    (From config) $build_in_build_dir = "1"
+    (From config) $builddir = "build"
+    (From config) $bundleaction = ""
+    (From config) $bundlename = ""
+    (From config) $calctol = "0"
+    (From config) $cfidx_flagsurl0 = "44"
+    (From config) $cfidx_flagsurl1 = "45"
+    (From config) $cfidx_hw_avail = "49"
+    (From config) $cfidx_license_num = "50"
+    (From config) $cfidx_test_sponsor = "51"
+    (From config) $cfidx_tester = "52"
+    (From config) $check_integrity = "1"
+    (From config) $check_md5 = "1"
+    (From config) $check_version = "1"
+    (From config) $command_add_redirect = "0"
+    (From config) $commanderrfile = "speccmds.err"
+    (From config) $commandfile = "speccmds.cmd"
+    (From config) $commandoutfile = "speccmds.out"
+    (From config) $commandstdoutfile = "speccmds.stdout"
+    (From config) $compareerrfile = "compare.err"
+    (From config) $comparefile = "compare.cmd"
+    (From config) $compareoutfile = "compare.out"
+    (From config) $comparestdoutfile = "compare.stdout"
+    (From config) $compile_error = "0"
+    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg"
+    (From config) $configdir = "config"
+    (From config) $configpath = "/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg"
+    (From config) $copies = "1"
+    (From config) $datadir = "data"
+    (From config) $default_size = "ref"
+    (From config) $delay = "0"
+    (From config) $deletebinaries = "0"
+    (From config) $deletework = "0"
+    (From config) $difflines = "10"
+    (From config) $dirprot = "511"
+    (From config) $endian = "12345678"
+    (From config) $env_vars = "0"
+    (From config) $exitvals = "spec_exit"
+    (From config) $expand_notes = "1"
+    (From config) $expid = ""
+    (From config) $ext = "gcc46-64bit"
+    (From config) $fake = "0"
+    (From config) $feedback = "1"
+    (From config) @files_read = ( /home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg, specperl $[top]/Docs/sysinfo )
+    (From config) $flag_url_base = "http://www.spec.org/auto/cpu2006/flags/"
+    (From config) @flagsurl = ( /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml )
+    (From config) $flagsurl0 = "/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml"
+    (From config) $flagsurl1 = "/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml"
+    (From config) $help = "0"
+    (From config) $http_proxy = ""
+    (From config) $http_timeout = "30"
+    (From config) $hw_avail = "Dec-9999"
+    (From config) $ignore_errors = "yes"
+    (From config) $ignore_sigint = "0"
+    (From config) $info_wrap_columns = "50"
+    (From config) $inputdir = "input"
+    (From config) $iterations = "1"
+    (From config) $keeptmp = "0"
+    (From config) $license_num = "0"
+    (From config) $line_width = "0"
+    (From config) $locking = "1"
+    (From config) $log = "CPU2006"
+    (From config) $log_line_width = "0"
+    (From config) $log_timestamp = "0"
+    (From config) $mach = "default"
+    (From config) $mail_reports = "all"
+    (From config) $mailcompress = "0"
+    (From config) $mailmethod = "smtp"
+    (From config) $mailport = "25"
+    (From config) $mailserver = "127.0.0.1"
+    (From config) $mailto = ""
+    (From config) $make = "specmake"
+    (From config) $make_no_clobber = "0"
+    (From config) $makeflags = ""
+    (From config) $max_active_compares = "0"
+    (From config) $mean_anyway = "0"
+    (From config) $min_report_runs = "3"
+    (From config) $minimize_builddirs = "0"
+    (From config) $minimize_rundirs = "0"
+    (From config) $nc = ""
+    (From config) $nc_is_cd = "0"
+    (From config) $nc_is_na = "0"
+    (From config) $no_input_handler = "close"
+    (From config) $no_monitor = ""
+    (From config) $note_preenv = "0"
+    (From config) $notes_wrap_columns = "0"
+    (From config) $notes_wrap_indent = "  "
+    (From config) $os_exe_ext = ""
+    (From config) $output = "asc"
+    (From config) $output_format = "asc,csv,html"
+    (From config) $output_root = ""
+    (From config) $outputdir = "output"
+    (From config) $parallel_setup = "1"
+    (From config) $parallel_setup_prefork = ""
+    (From config) $parallel_setup_type = "fork"
+    (From config) $parallel_test = "0"
+    (From config) $parallel_test_submit = "0"
+    (From config) $parallel_test_workloads = ""
+    (From config) $plain_train = "1"
+    (From config) $power = "0"
+    (From config) $preenv = "1"
+    (From config) $prefix = ""
+    (From config) $ranks = "1"
+    (From config) $rate = "0"
+    (From config) @rawformat_opts = ( --verbose, 35 )
+    (From config) $realuser = "alberto"
+    (From config) $rebuild = "0"
+    (From config) $reftime = "reftime"
+    (From config) $reportable = "0"
+    (From config) $resultdir = "result"
+    (From config) $review = "0"
+    (From config) $run = "all"
+    (From config) $rundir = "run"
+    (From config) $runspec = "/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec --config /home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg --size ref --iterations 1 --noreportable --verbose 35 483.xalancbmk"
+    (From config) $safe_eval = "1"
+    (From config) $section_specifier_fatal = "1"
+    (From config) $sendmail = "/usr/sbin/sendmail"
+    (From config) $setpgrp_enabled = "1"
+    (From config) $setprocgroup = "1"
+    (From config) $setup_error = "0"
+    (From config) $shrate = "0"
+    (From config) $sigint = "2"
+    (From config) $size = "ref"
+    (From config) $specdiff = "specdiff"
+    (From config) $specmake = "Makefile.YYYtArGeTYYYspec"
+    (From config) $specrun = "/home/alberto/disciplinas/mo601/tools/SPEC/install/specinvoke"
+    (From config) $speed = "0"
+    (From config) $srcalt = ""
+    (From config) $srcdir = "src"
+    (From config) $stagger = "10"
+    (From config) $strict_rundir_verify = "1"
+    (From config) $submit_default = "/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin -t /home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/source/tools/ManualExamples/obj-intel64/inscount0.so -o /home/alberto/disciplinas/mo601/mo601-projects/project1/inscount_out/"$benchmark"_"$workload"_inscount.out -- $command"
+    (From config) $sysinfo_program = "specperl /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo"
+    (From config) $table = "1"
+    (From config) $teeout = "yes"
+    (From config) $teerunout = "yes"
+    (From config) $test_date = "Sep-2016"
+    (From config) $test_sponsor = "Test Sponsor (Optional, defaults to hw_vendor)"
+    (From config) $tester = "(Optional, defaults to hw_vendor)"
+    (From config) $top = "/home/alberto/disciplinas/mo601/tools/SPEC/install"
+    (From config) $train_with = "train"
+    (From config) $tune = "base"
+    (From config) $uid = "10103"
+    (From config) $unbuffer = "1"
+    (From config) $update-flags = "0"
+    (From config) $use_submit_for_speed = "yes"
+    (From config) $username = "alberto"
+    (From config) @valid_actions = ( buildsetup, runsetup, setup, build, only_run, onlyrun, run, validate, configpp, clean, realclean, trash, clobber, scrub, interclean, report, makebundle, usebundle )
+    (From config) @valid_tunes = ( base, peak )
+    (From config) $vendor = "anon"
+    (From config) $vendor_makefiles = "0"
+    (From config) $verbose = "35"
+    (From config) $version = "0"
+    (From config) $version_url = "http://www.spec.org/auto/cpu2006/current_version"
+    (From config) $worklist = "list"
+ - No deleted variables
+  '483.xalancbmk' added
+Retrieving flags file (/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml)...
+Retrieving flags file (/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml)...
+Benchmarks selected: 483.xalancbmk
+Compiling Binaries
+
+------------------------------------------------------------------------
+  Up to date 483.xalancbmk base gcc46-64bit default
+
+
+Setting Up Run Directories
+  Setting up 483.xalancbmk ref base gcc46-64bit default: Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/run/run_base_ref_gcc46-64bit.0000/100mb.xsd
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/run/run_base_ref_gcc46-64bit.0000/ref.lst
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/run/run_base_ref_gcc46-64bit.0000/t5.xml
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/run/run_base_ref_gcc46-64bit.0000/xalanc.xsl
+existing (run_base_ref_gcc46-64bit.0000)
+
+-----------------------------------
+Running Benchmarks
+
+-----------------------------------
+  Running 483.xalancbmk ref base gcc46-64bit default
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchmark.pm line 3064):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $basepeak = "1"
+    (From config) @files_read = ( /home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg, specperl $[top]/Docs/sysinfo, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml )
+    (From config) $realuser = "your name here"
+    (From config) $specrun = "specinvoke"
+ - Variables available for interpolation that were not in the last list:
+    (From config) @BENCHLANG = ( CXX )
+    (From config) $BENCH_CXXFLAGS = "-DAPP_NO_THREADS -DXALAN_INMEM_MSG_LOADER -I. -Ixercesc -Ixercesc/dom -Ixercesc/dom/impl -Ixercesc/sax -Ixercesc/util/MsgLoaders/InMemory -Ixercesc/util/Transcoders/Iconv -Ixalanc/include -DPROJ_XMLPARSER -DPROJ_XMLUTIL -DPROJ_PARSERS -DPROJ_SAX4C -DPROJ_SAX2 -DPROJ_DOM -DPROJ_VALIDATORS -DXML_USE_NATIVE_TRANSCODER -DXML_USE_INMEM_MESSAGELOADER"
+    (From config) $CC = "/usr/bin/gcc"
+    (From config) $COPTIMIZE = "-O2 -fno-strict-aliasing"
+    (From config) $CXX = "/usr/bin/g++"
+    (From config) $CXXOPTIMIZE = "-O2 -fno-strict-aliasing"
+    (From config) $CXXPORTABILITY = "-DSPEC_CPU_LINUX"
+    (From config) @EXEBASE = ( Xalan )
+    (From config) $FC = "/usr/bin/gfortran"
+    (From config) $FOPTIMIZE = "-O2 -fno-strict-aliasing"
+    (From config) $FPBASE = "yes"
+    (From config) $PORTABILITY = "-DSPEC_CPU_LP64"
+    (From config) $abstol = ""
+    (From config) @allBENCHLANG = ( CXX )
+    (From config) $baggage = ""
+    (From config) @base_exe = ( Xalan )
+    (From config) $baseexe = "Xalan"
+    (From config) $benchmark = "483.xalancbmk"
+    (From config) @benchset_list = (  )
+    (From config) $binary = ""
+    (From config) @bundle_files = (  )
+    (From config) $cfidx_hw_cpu_char = "92"
+    (From config) $cfidx_hw_cpu_mhz = "93"
+    (From config) $cfidx_hw_cpu_name = "214"
+    (From config) $cfidx_hw_disk = "215"
+    (From config) $cfidx_hw_fpu = "94"
+    (From config) $cfidx_hw_memory001 = "216"
+    (From config) $cfidx_hw_memory002 = "217"
+    (From config) $cfidx_hw_model = "91"
+    (From config) $cfidx_hw_nchips = "218"
+    (From config) $cfidx_hw_ncores = "95"
+    (From config) $cfidx_hw_ncoresperchip = "96"
+    (From config) $cfidx_hw_ncpuorder = "98"
+    (From config) $cfidx_hw_nthreadspercore = "97"
+    (From config) $cfidx_hw_ocache = "102"
+    (From config) $cfidx_hw_other = "104"
+    (From config) $cfidx_hw_pcache = "99"
+    (From config) $cfidx_hw_scache = "100"
+    (From config) $cfidx_hw_tcache = "101"
+    (From config) $cfidx_hw_vendor = "103"
+    (From config) $cfidx_notes_os_000 = "128"
+    (From config) $cfidx_notes_plat_sysinfo_000 = "165"
+    (From config) $cfidx_notes_plat_sysinfo_005 = "166"
+    (From config) $cfidx_notes_plat_sysinfo_010 = "167"
+    (From config) $cfidx_notes_plat_sysinfo_015 = "168"
+    (From config) $cfidx_notes_plat_sysinfo_020 = "169"
+    (From config) $cfidx_notes_plat_sysinfo_025 = "170"
+    (From config) $cfidx_notes_plat_sysinfo_030 = "171"
+    (From config) $cfidx_notes_plat_sysinfo_035 = "172"
+    (From config) $cfidx_notes_plat_sysinfo_040 = "173"
+    (From config) $cfidx_notes_plat_sysinfo_045 = "174"
+    (From config) $cfidx_notes_plat_sysinfo_050 = "175"
+    (From config) $cfidx_notes_plat_sysinfo_055 = "176"
+    (From config) $cfidx_notes_plat_sysinfo_060 = "177"
+    (From config) $cfidx_notes_plat_sysinfo_065 = "178"
+    (From config) $cfidx_notes_plat_sysinfo_070 = "179"
+    (From config) $cfidx_notes_plat_sysinfo_075 = "180"
+    (From config) $cfidx_notes_plat_sysinfo_080 = "181"
+    (From config) $cfidx_notes_plat_sysinfo_085 = "182"
+    (From config) $cfidx_notes_plat_sysinfo_090 = "183"
+    (From config) $cfidx_notes_plat_sysinfo_095 = "184"
+    (From config) $cfidx_notes_plat_sysinfo_100 = "185"
+    (From config) $cfidx_notes_plat_sysinfo_105 = "186"
+    (From config) $cfidx_notes_plat_sysinfo_110 = "187"
+    (From config) $cfidx_notes_plat_sysinfo_115 = "188"
+    (From config) $cfidx_notes_plat_sysinfo_120 = "189"
+    (From config) $cfidx_notes_plat_sysinfo_125 = "190"
+    (From config) $cfidx_notes_plat_sysinfo_130 = "191"
+    (From config) $cfidx_notes_plat_sysinfo_135 = "192"
+    (From config) $cfidx_notes_plat_sysinfo_140 = "193"
+    (From config) $cfidx_notes_plat_sysinfo_145 = "194"
+    (From config) $cfidx_notes_plat_sysinfo_150 = "195"
+    (From config) $cfidx_notes_plat_sysinfo_155 = "196"
+    (From config) $cfidx_notes_plat_sysinfo_160 = "197"
+    (From config) $cfidx_notes_plat_sysinfo_165 = "198"
+    (From config) $cfidx_notes_plat_sysinfo_170 = "199"
+    (From config) $cfidx_notes_plat_sysinfo_175 = "200"
+    (From config) $cfidx_notes_plat_sysinfo_180 = "201"
+    (From config) $cfidx_notes_plat_sysinfo_185 = "202"
+    (From config) $cfidx_notes_plat_sysinfo_190 = "203"
+    (From config) $cfidx_notes_plat_sysinfo_195 = "204"
+    (From config) $cfidx_notes_plat_sysinfo_200 = "205"
+    (From config) $cfidx_notes_plat_sysinfo_205 = "206"
+    (From config) $cfidx_notes_plat_sysinfo_210 = "207"
+    (From config) $cfidx_notes_plat_sysinfo_215 = "208"
+    (From config) $cfidx_notes_plat_sysinfo_220 = "209"
+    (From config) $cfidx_notes_plat_sysinfo_225 = "210"
+    (From config) $cfidx_notes_plat_sysinfo_230 = "211"
+    (From config) $cfidx_notes_plat_sysinfo_235 = "212"
+    (From config) $cfidx_notes_plat_sysinfo_240 = "213"
+    (From config) $cfidx_notes_submit_000 = "125"
+    (From config) $cfidx_notes_submit_005 = "126"
+    (From config) $cfidx_prepared_by = "219"
+    (From config) $cfidx_sw_avail = "117"
+    (From config) $cfidx_sw_base_ptrsize = "119"
+    (From config) $cfidx_sw_compiler = "111"
+    (From config) $cfidx_sw_file = "220"
+    (From config) $cfidx_sw_os001 = "221"
+    (From config) $cfidx_sw_os002 = "222"
+    (From config) $cfidx_sw_other = "118"
+    (From config) $cfidx_sw_peak_ptrsize = "120"
+    (From config) $cfidx_sw_state = "223"
+    (From config) $clean_between_builds = "no"
+    (From config) $command = "..ÿrun_base_ref_gcc46-64bit.0000ÿXalan_base.gcc46-64bit -v t5.xml xalanc.xsl"
+    (From config) $commandexe = "..ÿrun_base_ref_gcc46-64bit.0000ÿXalan_base.gcc46-64bit"
+    (From config) $compwhite = ""
+    (From config) @copylist = ( 1 )
+    (From config) $copynum = "0"
+    (From config) $dependent_workloads = "0"
+    (From config) @dirlist = ( Spec::Listfile::entry=HASH(0x3cd3348) )
+    (From config) $exemd5 = "3438b804958a782a961ac561c8ab7251"
+    (From config) @extlist = ( gcc46-64bit )
+    (From config) $fdocommand = ""
+    (From config) $floatcompare = ""
+    (From config) $hw_cpu_char = ""
+    (From config) $hw_cpu_mhz = "9999"
+    (From config) $hw_cpu_name = "Intel Xeon E5645"
+    (From config) $hw_disk = "81 TB  add more disk info here"
+    (From config) $hw_fpu = "Integrated"
+    (From config) $hw_memory001 = "23.539 GB fixme: If using DDR3, format is:"
+    (From config) $hw_memory002 = "'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'"
+    (From config) $hw_model = "System Model Name"
+    (From config) $hw_nchips = "1"
+    (From config) $hw_ncores = "number of cores enabled"
+    (From config) $hw_ncoresperchip = "number of cores manufactured into each chip"
+    (From config) $hw_ncpuorder = "1,2 chips"
+    (From config) $hw_nthreadspercore = "number of threads enabled per core"
+    (From config) $hw_ocache = "None"
+    (From config) $hw_other = "None"
+    (From config) $hw_pcache = "9999 KB I + 9999 KB D on chip per core"
+    (From config) $hw_scache = "9999 KB I+D on chip per core"
+    (From config) $hw_tcache = "9999 MB I+D on chip per chip"
+    (From config) $hw_vendor = "System Vendor"
+    (From config) $ignorecase = ""
+    (From hash) $iter = "0"
+    (From config) $iteration = "-1"
+    (From config) @iterlist = ( 1 )
+    (From config) $logname = "/home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.084.log"
+    (From config) $lognum = "084"
+    (From config) @machlist = ( default )
+    (From config) $monitor_specrun_wrapper = ""
+    (From config) $monitor_wrapper = ""
+    (From config) $name = "xalancbmk"
+    (From config) $need_math = ""
+    (From config) $notes_os_000 = "'ulimit -s unlimited' was used to set environment stack size"
+    (From config) $notes_plat_sysinfo_000 = " Sysinfo program /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo"
+    (From config) $notes_plat_sysinfo_005 = " $Rev: 6775 $ $Date:: 2011-08-16 #$ 8787f7622badcf24e01c368b1db4377c"
+    (From config) $notes_plat_sysinfo_010 = " running on x03.recod Tue Sep  6 22:00:03 2016"
+    (From config) $notes_plat_sysinfo_015 = ""
+    (From config) $notes_plat_sysinfo_020 = " This section contains SUT (System Under Test) info as seen by"
+    (From config) $notes_plat_sysinfo_025 = " some common utilities.  To remove or add to this section, see:"
+    (From config) $notes_plat_sysinfo_030 = "   http://www.spec.org/cpu2006/Docs/config.html#sysinfo"
+    (From config) $notes_plat_sysinfo_035 = ""
+    (From config) $notes_plat_sysinfo_040 = " From /proc/cpuinfo"
+    (From config) $notes_plat_sysinfo_045 = "    model name : Intel(R) Xeon(R) CPU E5645 @ 2.40GHz"
+    (From config) $notes_plat_sysinfo_050 = "       1 "physical id"s (chips)"
+    (From config) $notes_plat_sysinfo_055 = "       12 "processors""
+    (From config) $notes_plat_sysinfo_060 = "    cores, siblings (Caution: counting these is hw and system dependent.  The"
+    (From config) $notes_plat_sysinfo_065 = "    following excerpts from /proc/cpuinfo might not be reliable.  Use with"
+    (From config) $notes_plat_sysinfo_070 = "    caution.)"
+    (From config) $notes_plat_sysinfo_075 = "       cpu cores : 6"
+    (From config) $notes_plat_sysinfo_080 = "       siblings  : 12"
+    (From config) $notes_plat_sysinfo_085 = "       physical 0: cores 0 1 2 8 9 10"
+    (From config) $notes_plat_sysinfo_090 = "    cache size : 12288 KB"
+    (From config) $notes_plat_sysinfo_095 = ""
+    (From config) $notes_plat_sysinfo_100 = " From /proc/meminfo"
+    (From config) $notes_plat_sysinfo_105 = "    MemTotal:       24682160 kB"
+    (From config) $notes_plat_sysinfo_110 = "    HugePages_Total:       0"
+    (From config) $notes_plat_sysinfo_115 = "    Hugepagesize:       2048 kB"
+    (From config) $notes_plat_sysinfo_120 = ""
+    (From config) $notes_plat_sysinfo_125 = " /usr/bin/lsb_release -d"
+    (From config) $notes_plat_sysinfo_130 = "    Ubuntu 12.04.5 LTS"
+    (From config) $notes_plat_sysinfo_135 = ""
+    (From config) $notes_plat_sysinfo_140 = " From /etc/*release* /etc/*version*"
+    (From config) $notes_plat_sysinfo_145 = "    debian_version: wheezy/sid"
+    (From config) $notes_plat_sysinfo_150 = "    os-release:"
+    (From config) $notes_plat_sysinfo_155 = "       NAME="Ubuntu""
+    (From config) $notes_plat_sysinfo_160 = "       VERSION="12.04.5 LTS, Precise Pangolin""
+    (From config) $notes_plat_sysinfo_165 = "       ID=ubuntu"
+    (From config) $notes_plat_sysinfo_170 = "       ID_LIKE=debian"
+    (From config) $notes_plat_sysinfo_175 = "       PRETTY_NAME="Ubuntu precise (12.04.5 LTS)""
+    (From config) $notes_plat_sysinfo_180 = "       VERSION_ID="12.04""
+    (From config) $notes_plat_sysinfo_185 = ""
+    (From config) $notes_plat_sysinfo_190 = " uname -a:"
+    (From config) $notes_plat_sysinfo_195 = "    Linux x03.recod 3.5.0-54-generic #81~precise1-Ubuntu SMP Tue Jul 15 04:02:22"
+    (From config) $notes_plat_sysinfo_200 = "    UTC 2014 x86_64 x86_64 x86_64 GNU/Linux"
+    (From config) $notes_plat_sysinfo_205 = ""
+    (From config) $notes_plat_sysinfo_210 = " run-level 2 Jul 18 11:47"
+    (From config) $notes_plat_sysinfo_215 = ""
+    (From config) $notes_plat_sysinfo_220 = " SPEC is set to: /home/alberto/disciplinas/mo601/tools/SPEC/install"
+    (From config) $notes_plat_sysinfo_225 = "    Filesystem                    Type  Size  Used Avail Use% Mounted on"
+    (From config) $notes_plat_sysinfo_230 = "    storage.recod:/l/home/alberto nfs    81T   32T   49T  40% /home/alberto"
+    (From config) $notes_plat_sysinfo_235 = ""
+    (From config) $notes_plat_sysinfo_240 = " (End of data from sysinfo program)"
+    (From config) $notes_submit_000 = "'numactl' was used to bind copies to the cores."
+    (From config) $notes_submit_005 = "See the configuration file for details."
+    (From config) $num = "483"
+    (From config) $obiwan = ""
+    (From config) $optmd5 = "1dd3c4dffba6bd0ef9212be66716e89c"
+    (From config) $path = "/home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk"
+    (From config) @powermeterlist = (  )
+    (From config) $prepared_by = "alberto  (is never output, only tags rawfile)"
+    (From config) $ref_added = "config.pl:1183"
+    (From config) $reltol = ""
+    (From config) $size_class = "ref"
+    (From config) @sizelist = ( ref )
+    (From config) $skipabstol = ""
+    (From config) $skipobiwan = ""
+    (From config) $skipreltol = ""
+    (From config) $skiptol = ""
+    (From config) $smarttune = "base"
+    (From config) @sources = ( AIXPlatformUtils.cpp, CSetDefs.cpp, BinHTTPURLInputStream.cpp, Win32PlatformUtils.cpp, Win32MsgLoader.cpp, Win32TransService.cpp, Win32TransService2.cpp, WinSockNetAccessor.cpp, SunCCDefs.cpp, SolarisPlatformUtils.cpp, GCCDefs.cpp, LinuxPlatformUtils.cpp, MIPSproDefs.cpp, IRIXPlatformUtils.cpp, HPCCDefs.cpp, HPPlatformUtils.cpp, WFXMLScanner.cpp, ASCIIRangeFactory.cpp, AbstractDOMParser.cpp, AbstractNumericFacetValidator.cpp, AbstractNumericValidator.cpp, AbstractStringValidator.cpp, AllContentModel.cpp, AnySimpleTypeDatatypeValidator.cpp, AnyURIDatatypeValidator.cpp, AttrImpl.cpp, AttrMapImpl.cpp, AttrNSImpl.cpp, BMPattern.cpp, Base64.cpp, Base64BinaryDatatypeValidator.cpp, BinFileInputStream.cpp, BinFileOutputStream.cpp, BinInputStream.cpp, BinMemInputStream.cpp, BinMemOutputStream.cpp, BinOutputStream.cpp, BitSet.cpp, BlockRangeFactory.cpp, BooleanDatatypeValidator.cpp, CDATASectionImpl.cpp, CMAny.cpp, CMBinaryOp.cpp, CMUnaryOp.cpp, CharToken.cpp, CharacterDataImpl.cpp, ChildNode.cpp, ClosureToken.cpp, CommentImpl.cpp, ComplexTypeInfo.cpp, ConcatToken.cpp, ConditionToken.cpp, ContentLeafNameTypeVector.cpp, ContentSpecNode.cpp, DFAContentModel.cpp, DGXMLScanner.cpp, DOMAttrImpl.cpp, DOMAttrMapImpl.cpp, DOMAttrNSImpl.cpp, DOMBuilderImpl.cpp, DOMCDATASectionImpl.cpp, DOMCharacterDataImpl.cpp, DOMChildNode.cpp, DOMCommentImpl.cpp, DOMConfigurationImpl.cpp, DOMDeepNodeListImpl.cpp, DOMDocumentFragmentImpl.cpp, DOMDocumentImpl.cpp, DOMDocumentTypeImpl.cpp, DOMElementImpl.cpp, DOMElementNSImpl.cpp, DOMEntityImpl.cpp, DOMEntityReferenceImpl.cpp, DOMErrorImpl.cpp, DOMException.cpp, DOMImplementationImpl.cpp, DOMImplementationRegistry.cpp, DOMLocatorImpl.cpp, DOMNamedNodeMapImpl.cpp, DOMNodeIDMap.cpp, DOMNodeImpl.cpp, DOMNodeIteratorImpl.cpp, DOMNodeListImpl.cpp, DOMNodeVector.cpp, DOMNormalizer.cpp, DOMNotationImpl.cpp, DOMParentNode.cpp, DOMParser.cpp, DOMProcessingInstructionImpl.cpp, DOMRangeException.cpp, DOMRangeImpl.cpp, DOMString.cpp, DOMStringPool.cpp, DOMTextImpl.cpp, DOMTreeWalkerImpl.cpp, DOMTypeInfoImpl.cpp, DOMWriterImpl.cpp, DOMXPathException.cpp, DOM_Attr.cpp, DOM_CDATASection.cpp, DOM_CharacterData.cpp, DOM_Comment.cpp, DOM_DOMException.cpp, DOM_DOMImplementation.cpp, DOM_Document.cpp, DOM_DocumentFragment.cpp, DOM_DocumentType.cpp, DOM_Element.cpp, DOM_Entity.cpp, DOM_EntityReference.cpp, DOM_NamedNodeMap.cpp, DOM_Node.cpp, DOM_NodeFilter.cpp, DOM_NodeIterator.cpp, DOM_NodeList.cpp, DOM_Notation.cpp, DOM_ProcessingInstruction.cpp, DOM_Range.cpp, DOM_RangeException.cpp, DOM_Text.cpp, DOM_TreeWalker.cpp, DOM_XMLDecl.cpp, DStringPool.cpp, DTDAttDef.cpp, DTDAttDefList.cpp, DTDElementDecl.cpp, DTDEntityDecl.cpp, DTDGrammar.cpp, DTDScanner.cpp, DTDValidator.cpp, DatatypeValidator.cpp, DatatypeValidatorFactory.cpp, DateDatatypeValidator.cpp, DateTimeDatatypeValidator.cpp, DateTimeValidator.cpp, DayDatatypeValidator.cpp, DecimalDatatypeValidator.cpp, DeepNodeListImpl.cpp, DefaultPanicHandler.cpp, DocumentFragmentImpl.cpp, DocumentImpl.cpp, DocumentTypeImpl.cpp, DomMemDebug.cpp, DoubleDatatypeValidator.cpp, Dummy.cpp, DurationDatatypeValidator.cpp, ENTITYDatatypeValidator.cpp, ElemStack.cpp, ElementDefinitionImpl.cpp, ElementImpl.cpp, ElementNSImpl.cpp, EncodingValidator.cpp, EntityImpl.cpp, EntityReferenceImpl.cpp, FieldActivator.cpp, FieldValueMap.cpp, FloatDatatypeValidator.cpp, GeneralAttributeCheck.cpp, Grammar.cpp, GrammarResolver.cpp, HashPtr.cpp, HashXMLCh.cpp, HeaderDummy.cpp, HexBin.cpp, HexBinaryDatatypeValidator.cpp, IC_Field.cpp, IC_Key.cpp, IC_KeyRef.cpp, IC_Selector.cpp, IC_Unique.cpp, IDDatatypeValidator.cpp, IDREFDatatypeValidator.cpp, IGXMLScanner.cpp, IGXMLScanner2.cpp, IconvTransService.cpp, IdentityConstraint.cpp, InMemMsgLoader.cpp, InputSource.cpp, KVStringPair.cpp, ListDatatypeValidator.cpp, LocalFileFormatTarget.cpp, LocalFileInputSource.cpp, Match.cpp, MemBufFormatTarget.cpp, MemBufInputSource.cpp, MemoryManagerArrayImpl.cpp, MemoryManagerImpl.cpp, MixedContentModel.cpp, ModifierToken.cpp, MonthDatatypeValidator.cpp, MonthDayDatatypeValidator.cpp, Mutexes.cpp, NCNameDatatypeValidator.cpp, NOTATIONDatatypeValidator.cpp, NameDatatypeValidator.cpp, NamedNodeMapImpl.cpp, NamespaceScope.cpp, NodeIDMap.cpp, NodeImpl.cpp, NodeIteratorImpl.cpp, NodeListImpl.cpp, NodeVector.cpp, NotationImpl.cpp, Op.cpp, OpFactory.cpp, PSVIAttribute.cpp, PSVIAttributeList.cpp, PSVIElement.cpp, PSVIItem.cpp, PanicHandler.cpp, ParenToken.cpp, ParentNode.cpp, ParserForXMLSchema.cpp, PlatformUtils.cpp, ProcessingInstructionImpl.cpp, QName.cpp, QNameDatatypeValidator.cpp, RangeFactory.cpp, RangeImpl.cpp, RangeToken.cpp, RangeTokenMap.cpp, ReaderMgr.cpp, RefCountedImpl.cpp, RegularExpression.cpp, RegxParser.cpp, RegxUtil.cpp, SAX2XMLReaderImpl.cpp, SAXException.cpp, SAXParseException.cpp, SAXParser.cpp, SGXMLScanner.cpp, SchemaAttDef.cpp, SchemaAttDefList.cpp, SchemaElementDecl.cpp, SchemaGrammar.cpp, SchemaInfo.cpp, SchemaSymbols.cpp, SchemaValidator.cpp, SimpleContentModel.cpp, StdInInputSource.cpp, StdOutFormatTarget.cpp, StringDatatypeValidator.cpp, StringPool.cpp, StringToken.cpp, SubstitutionGroupComparator.cpp, SynchronizedStringPool.cpp, TextImpl.cpp, TimeDatatypeValidator.cpp, Token.cpp, TokenFactory.cpp, TransService.cpp, TraverseSchema.cpp, TreeWalkerImpl.cpp, URLInputSource.cpp, UnicodeRangeFactory.cpp, UnionDatatypeValidator.cpp, UnionToken.cpp, ValidationContextImpl.cpp, ValueStore.cpp, ValueStoreCache.cpp, VecAttrListImpl.cpp, VecAttributesImpl.cpp, WFXMLScanner.cpp, Wrapper4DOMInputSource.cpp, Wrapper4InputSource.cpp, XML256TableTranscoder.cpp, XML88591Transcoder.cpp, XMLASCIITranscoder.cpp, XMLAbstractDoubleFloat.cpp, XMLAttDef.cpp, XMLAttDefList.cpp, XMLAttr.cpp, XMLBigDecimal.cpp, XMLBigInteger.cpp, XMLBuffer.cpp, XMLBufferMgr.cpp, XMLCanRepGroup.cpp, XMLChTranscoder.cpp, XMLChar.cpp, XMLContentModel.cpp, XMLDTDDescription.cpp, XMLDTDDescriptionImpl.cpp, XMLDateTime.cpp, XMLDeclImpl.cpp, XMLDouble.cpp, XMLEBCDICTranscoder.cpp, XMLElementDecl.cpp, XMLEntityDecl.cpp, XMLException.cpp, XMLFloat.cpp, XMLFormatter.cpp, XMLGrammarDescription.cpp, XMLGrammarPoolImpl.cpp, XMLIBM1047Transcoder.cpp, XMLIBM1140Transcoder.cpp, XMLMsgLoader.cpp, XMLNotationDecl.cpp, XMLNumber.cpp, XMLRangeFactory.cpp, XMLReader.cpp, XMLRecognizer.cpp, XMLRefInfo.cpp, XMLScanner.cpp, XMLScannerResolver.cpp, XMLSchemaDescription.cpp, XMLSchemaDescriptionImpl.cpp, XMLString.cpp, XMLStringTokenizer.cpp, XMLUCSTranscoder.cpp, XMLURL.cpp, XMLUTF16Transcoder.cpp, XMLUTF8Transcoder.cpp, XMLUni.cpp, XMLUniCharacter.cpp, XMLUri.cpp, XMLValidator.cpp, XMLWin1252Transcoder.cpp, XMemory.cpp, XObjectComparator.cpp, XPathMatcher.cpp, XPathMatcherStack.cpp, XPathSymbols.cpp, XProtoType.cpp, XSAnnotation.cpp, XSAttributeDeclaration.cpp, XSAttributeGroupDefinition.cpp, XSAttributeUse.cpp, XSComplexTypeDefinition.cpp, XSDDOMParser.cpp, XSDElementNSImpl.cpp, XSDErrorReporter.cpp, XSDLocator.cpp, XSElementDeclaration.cpp, XSFacet.cpp, XSIDCDefinition.cpp, XSModel.cpp, XSModelGroup.cpp, XSModelGroupDefinition.cpp, XSMultiValueFacet.cpp, XSNamespaceItem.cpp, XSNotationDeclaration.cpp, XSObject.cpp, XSObjectFactory.cpp, XSParticle.cpp, XSSimpleTypeDefinition.cpp, XSTypeDefinition.cpp, XSWildcard.cpp, XSerializeEngine.cpp, XTemplateComparator.cpp, XTemplateSerializer.cpp, XUtil.cpp, XercesAttGroupInfo.cpp, XercesDOMParser.cpp, XercesElementWildcard.cpp, XercesGroupInfo.cpp, XercesXPath.cpp, YearDatatypeValidator.cpp, YearMonthDatatypeValidator.cpp, sax2Dummy.cpp, DOMServices.cpp, DOMSupport.cpp, DOMSupportDefault.cpp, DOMSupportException.cpp, DOMSupportInit.cpp, TreeWalker.cpp, XalanDocumentPrefixResolver.cpp, XalanNamespacesStack.cpp, AttributeListImpl.cpp, AttributesImpl.cpp, DOMStringHelper.cpp, DOMStringPrintWriter.cpp, DoubleSupport.cpp, Writer.cpp, ExecutionContext.cpp, FormatterListener.cpp, NamedNodeMapAttributeList.cpp, NullPrintWriter.cpp, PlatformSupportInit.cpp, PrefixResolver.cpp, PrintWriter.cpp, Resettable.cpp, StdBinInputStream.cpp, StringTokenizer.cpp, URISupport.cpp, XSLException.cpp, XalanBitmap.cpp, XalanDOMStringCache.cpp, XalanDOMStringAllocator.cpp, XalanDOMStringHashTable.cpp, XalanDOMStringPool.cpp, XalanDecimalFormatSymbols.cpp, XalanEncodingPropertyCache.cpp, XalanFStreamOutputStream.cpp, XalanFileOutputStream.cpp, XalanICUMessageLoader.cpp, XalanInMemoryMessageLoader.cpp, XalanMessageLoader.cpp, XalanNLSMessageLoader.cpp, XalanNullOutputStream.cpp, XalanNumberFormat.cpp, XalanOutputStream.cpp, XalanOutputStreamPrintWriter.cpp, XalanParsedURI.cpp, XalanReferenceCountedObject.cpp, XalanSimplePrefixResolver.cpp, XalanStdOutputStream.cpp, XalanTranscodingServices.cpp, XalanToXercesTranscoderWrapper.cpp, XalanUTF16Transcoder.cpp, XalanXMLChar.cpp, NodeNameTreeWalker.cpp, ICUResHandler.cpp, InMemHandler.cpp, MsgFileOutputStream.cpp, NLSHandler.cpp, SAX2Handler.cpp, XalanMsgLib.cpp, FormatterToDOM.cpp, FormatterToHTML.cpp, FormatterToNull.cpp, FormatterToText.cpp, FormatterToXML.cpp, FormatterToXMLBase.cpp, FormatterToXML_UTF16.cpp, FormatterToXML_UTF8.cpp, XMLSupportInit.cpp, FormatterTreeWalker.cpp, XMLParserLiaison.cpp, XMLSupportException.cpp, XalanHTMLElementsProperties.cpp, ElementPrefixResolverProxy.cpp, FormatterStringLengthCounter.cpp, Function.cpp, FunctionConcat.cpp, FunctionContains.cpp, FunctionID.cpp, FunctionLang.cpp, FunctionNamespaceURI.cpp, FunctionNormalizeSpace.cpp, FunctionStartsWith.cpp, FunctionString.cpp, FunctionSubstring.cpp, FunctionSubstringAfter.cpp, FunctionSubstringBefore.cpp, FunctionTranslate.cpp, MutableNodeRefList.cpp, NodeRefList.cpp, NodeRefListBase.cpp, XBoolean.cpp, XNodeSet.cpp, XNodeSetAllocator.cpp, XNodeSetBase.cpp, XNodeSetNodeProxy.cpp, XNodeSetNodeProxyAllocator.cpp, XNodeSetResultTreeFragProxy.cpp, XNull.cpp, XNumber.cpp, XNumberAllocator.cpp, XNumberBase.cpp, XObject.cpp, XObjectFactory.cpp, XObjectFactoryDefault.cpp, XObjectResultTreeFragProxy.cpp, XObjectResultTreeFragProxyBase.cpp, XObjectResultTreeFragProxyText.cpp, XObjectTypeCallback.cpp, XPath.cpp, XPathAllocator.cpp, XPathConstructionContext.cpp, XPathConstructionContextDefault.cpp, XPathEnvSupport.cpp, XPathEnvSupportDefault.cpp, XPathEvaluator.cpp, XPathExecutionContext.cpp, XPathExecutionContextDefault.cpp, XPathExpression.cpp, XPathFactory.cpp, XPathFactoryBlock.cpp, XPathFactoryDefault.cpp, XPathFunctionTable.cpp, XPathInit.cpp, XPathParserException.cpp, XPathProcessor.cpp, XPathProcessorImpl.cpp, XSpan.cpp, XString.cpp, XStringAdapter.cpp, XStringAdapterAllocator.cpp, XStringAllocator.cpp, XStringBase.cpp, XStringCached.cpp, XStringCachedAllocator.cpp, XStringReference.cpp, XStringReferenceAllocator.cpp, XToken.cpp, XTokenNumberAdapter.cpp, XUnknown.cpp, XTokenNumberAdapterAllocator.cpp, XTokenStringAdapter.cpp, XTokenStringAdapterAllocator.cpp, XalanDocumentFragmentNodeRefListBaseProxy.cpp, XalanQName.cpp, XalanQNameByReference.cpp, XalanQNameByValue.cpp, XalanQNameByValueAllocator.cpp, XalanXPathException.cpp, XPathCAPI.cpp, AVTPart.cpp, AVT.cpp, AVTPartSimple.cpp, AVTPartXPath.cpp, Constants.cpp, CountersTable.cpp, ElemApplyImport.cpp, ElemApplyTemplates.cpp, ElemAttribute.cpp, ElemChoose.cpp, ElemAttributeSet.cpp, ElemCallTemplate.cpp, ElemComment.cpp, ElemCopy.cpp, ElemCopyOf.cpp, ElemDecimalFormat.cpp, ElemElement.cpp, ElemEmpty.cpp, ElemFallback.cpp, ElemExtensionCall.cpp, ElemForEach.cpp, ElemForwardCompatible.cpp, ElemIf.cpp, ElemLiteralResult.cpp, ElemMessage.cpp, ElemNumber.cpp, ElemOtherwise.cpp, ElemPI.cpp, ElemParam.cpp, ElemSort.cpp, ElemTemplate.cpp, ElemTemplateElement.cpp, ElemText.cpp, ElemTextLiteral.cpp, ElemUse.cpp, ElemValueOf.cpp, ElemVariable.cpp, ElemWhen.cpp, ElemWithParam.cpp, ExtensionFunctionHandler.cpp, ExtensionNSHandler.cpp, FunctionCurrent.cpp, FunctionDocument.cpp, FunctionElementAvailable.cpp, FunctionFormatNumber.cpp, FunctionFunctionAvailable.cpp, FunctionGenerateID.cpp, FunctionKey.cpp, FunctionSystemProperty.cpp, FunctionUnparsedEntityURI.cpp, GenerateEvent.cpp, KeyTable.cpp, NamespacesHandler.cpp, NodeSortKey.cpp, NodeSorter.cpp, OutputContextStack.cpp, ProblemListener.cpp, ProblemListenerDefault.cpp, ResultNamespacesStack.cpp, SelectionEvent.cpp, Stylesheet.cpp, StylesheetExecutionContext.cpp, StylesheetConstructionContext.cpp, StylesheetConstructionContextDefault.cpp, StylesheetExecutionContextDefault.cpp, StylesheetHandler.cpp, StylesheetRoot.cpp, TopLevelArg.cpp, TraceListener.cpp, TraceListenerDefault.cpp, TracerEvent.cpp, VariablesStack.cpp, XResultTreeFrag.cpp, XResultTreeFragAllocator.cpp, XSLTEngineImpl.cpp, XSLTInit.cpp, XSLTInputSource.cpp, XSLTProcessor.cpp, XSLTProcessorEnvSupport.cpp, XSLTProcessorEnvSupportDefault.cpp, XSLTProcessorException.cpp, XSLTResultTarget.cpp, XalanAVTAllocator.cpp, XalanAVTPartSimpleAllocator.cpp, XalanAVTPartXPathAllocator.cpp, XalanElemApplyTemplatesAllocator.cpp, XalanElemAttributeAllocator.cpp, XalanElemAttributeSetAllocator.cpp, XalanElemCallTemplateAllocator.cpp, XalanElemElementAllocator.cpp, XalanElemEmptyAllocator.cpp, XalanElemLiteralResultAllocator.cpp, XalanElemTemplateAllocator.cpp, XalanElemTextAllocator.cpp, XalanElemTextLiteralAllocator.cpp, XalanTemplate.cpp, XalanElemValueOfAllocator.cpp, XalanElemVariableAllocator.cpp, XalanNumberingResourceBundle.cpp, XalanSourceTreeDocumentAllocator.cpp, XalanSourceTreeDocumentFragmentAllocator.cpp, XalanSpaceNodeTester.cpp, XalanAttr.cpp, XalanCDataSection.cpp, XalanCharacterData.cpp, XalanComment.cpp, XalanDOMException.cpp, XalanDOMImplementation.cpp, XalanDOMInit.cpp, XalanDOMString.cpp, XalanDocument.cpp, XalanDocumentFragment.cpp, XalanDocumentType.cpp, XalanElement.cpp, XalanEmptyNamedNodeMap.cpp, XalanEntity.cpp, XalanEntityReference.cpp, XalanNamedNodeMap.cpp, XalanNode.cpp, XalanNodeList.cpp, XalanNodeListDummy.cpp, XalanNodeListSurrogate.cpp, XalanNotation.cpp, XalanProcessingInstruction.cpp, XalanText.cpp, XalanEXSLTCommon.cpp, XalanEXSLTDateTime.cpp, XalanEXSLTDynamic.cpp, XalanEXSLTMath.cpp, XalanEXSLTSet.cpp, XalanEXSLTString.cpp, FunctionDifference.cpp, FunctionDistinct.cpp, FunctionEvaluate.cpp, FunctionHasSameNodes.cpp, FunctionIntersection.cpp, FunctionNodeSet.cpp, XalanExtensions.cpp, FormatterToSourceTree.cpp, XalanSourceTreeAttr.cpp, XalanSourceTreeAttrNS.cpp, XalanSourceTreeAttributeAllocator.cpp, XalanSourceTreeAttributeNSAllocator.cpp, XalanSourceTreeComment.cpp, XalanSourceTreeCommentAllocator.cpp, XalanSourceTreeContentHandler.cpp, XalanSourceTreeDOMSupport.cpp, XalanSourceTreeDocument.cpp, XalanSourceTreeDocumentFragment.cpp, XalanSourceTreeElement.cpp, XalanSourceTreeElementA.cpp, XalanSourceTreeElementAAllocator.cpp, XalanSourceTreeElementANS.cpp, XalanSourceTreeElementANSAllocator.cpp, XalanSourceTreeElementNA.cpp, XalanSourceTreeElementNAAllocator.cpp, XalanSourceTreeElementNANS.cpp, XalanSourceTreeElementNANSAllocator.cpp, XalanSourceTreeHelper.cpp, XalanSourceTreeInit.cpp, XalanSourceTreeParserLiaison.cpp, XalanSourceTreeProcessingInstruction.cpp, XalanSourceTreeProcessingInstructionAllocator.cpp, XalanSourceTreeText.cpp, XalanSourceTreeTextAllocator.cpp, XalanSourceTreeTextIWS.cpp, XalanSourceTreeTextIWSAllocator.cpp, XalanCAPI.cpp, XalanCompiledStylesheetDefault.cpp, XalanDefaultDocumentBuilder.cpp, XalanDefaultParsedSource.cpp, XalanParsedSource.cpp, XalanSourceTreeWrapperParsedSource.cpp, XalanTransformer.cpp, XalanTransformerOutputStream.cpp, XalanTransformerProblemListener.cpp, XercesDOMParsedSource.cpp, XercesDOMWrapperParsedSource.cpp, FormatterToXercesDOM.cpp, XercesAttrWrapper.cpp, XercesAttrWrapperAllocator.cpp, XercesCDATASectionWrapper.cpp, XercesCommentWrapper.cpp, XercesDOMException.cpp, XercesDOMFormatterWalker.cpp, XercesDOMImplementationWrapper.cpp, XercesDOMSupport.cpp, XercesDOMWalker.cpp, XercesDOMWrapperException.cpp, XercesDocumentTypeWrapper.cpp, XercesDocumentWrapper.cpp, XercesEntityWrapper.cpp, XercesElementWrapper.cpp, XercesElementWrapperAllocator.cpp, XercesEntityReferenceWrapper.cpp, XercesLiaisonXalanDOMStringPool.cpp, XercesNamedNodeMapAttributeList.cpp, XercesParserLiaison.cpp, FormatterToDeprecatedXercesDOM.cpp, XercesAttrBridge.cpp, XercesAttributeBridgeAllocator.cpp, XercesBridgeHelper.cpp, XercesBridgeNavigator.cpp, XercesCDATASectionBridge.cpp, XercesCommentBridge.cpp, XercesDOMImplementationBridge.cpp, XercesDOM_NodeHack.cpp, XercesDocumentBridge.cpp, XercesDocumentFragmentBridge.cpp, XercesDocumentTypeBridge.cpp, XercesElementBridge.cpp, XercesElementBridgeAllocator.cpp, XercesEntityBridge.cpp, XercesEntityReferenceBridge.cpp, XercesNamedNodeMapBridge.cpp, XercesNodeListBridge.cpp, XercesNotationBridge.cpp, XercesProcessingInstructionBridge.cpp, XercesTextBridge.cpp, XercesTextBridgeAllocator.cpp, XercesToXalanNodeMap.cpp, XercesTreeWalker.cpp, XercesNamedNodeMapWrapper.cpp, XercesNodeListWrapper.cpp, XercesNotationWrapper.cpp, XercesProcessingInstructionWrapper.cpp, XercesTextWrapper.cpp, XercesTextWrapperAllocator.cpp, XercesWrapperHelper.cpp, XercesWrapperNavigator.cpp, XercesWrapperToXalanNodeMap.cpp, XalanExe.cpp )
+    (From config) $srcsource = "/home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/src"
+    (From config) $sw_avail = "Mar-2011"
+    (From config) $sw_base_ptrsize = "64-bit"
+    (From config) $sw_compiler = "gcc, g++ & gfortran 4.6.0"
+    (From config) $sw_file = "nfs"
+    (From config) $sw_os001 = "Ubuntu 12.04.5 LTS"
+    (From config) $sw_os002 = "3.5.0-54-generic"
+    (From config) $sw_other = "None"
+    (From config) $sw_peak_ptrsize = "64-bit"
+    (From config) $sw_state = "Run level 2 (add definition here)"
+    (From config) @tempmeterlist = (  )
+    (From config) @tunelist = ( base )
+    (From hash) $workload = "0"
+ - Variables from the previous list that are NO LONGER AVAILABLE:
+    $config
+**WARNING: environment variable 'TERMCAP' contains embedded CR or LF; they will be converted to spaces
+Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/run/run_base_ref_gcc46-64bit.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
+/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/run/run_base_ref_gcc46-64bit.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
+Start command: Tue Sep  6 22:00:07 2016 (1473210007)
+Stop command: Tue Sep  6 23:04:50 2016 (1473213890)
+Elapsed time for command: 01:04:43 (3883)
+Workload elapsed time (0:1) = 3875.671383 seconds
+Copy 0 of 483.xalancbmk (base ref) run 1 finished at Tue Sep  6 23:04:42 2016.  Total elapsed time: 3875.671383
+Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/run/run_base_ref_gcc46-64bit.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd'
+/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/483.xalancbmk/run/run_base_ref_gcc46-64bit.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd
+Start command: Tue Sep  6 23:04:51 2016 (1473213891)
+Stop command: Tue Sep  6 23:04:54 2016 (1473213894)
+Elapsed time for command: 00:00:03 (3)
+ Success 483.xalancbmk base ref ratio=1.78, runtime=3875.671479, power=0.00w, temp=0.00 deg, humidity=0.00%
+Success: 1x483.xalancbmk
+Producing Raw Reports
+mach: default
+  ext: gcc46-64bit
+    size: ref
+      set: int
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchset.pm line 458):
+ - No variables changed
+ - Variables available for interpolation that were not in the last list:
+    (From config) $CPORTABILITY = "-DSPEC_CPU_LINUX"
+    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg"
+ - Variables from the previous list that are NO LONGER AVAILABLE:
+    @BENCHLANG
+    $BENCH_CXXFLAGS
+    @EXEBASE
+    $FPBASE
+    $abstol
+    @allBENCHLANG
+    @base_exe
+    $baseexe
+    $benchmark
+    $binary
+    $clean_between_builds
+    $command
+    $commandexe
+    $compwhite
+    $copynum
+    $dependent_workloads
+    @dirlist
+    $fdocommand
+    $floatcompare
+    $ignorecase
+    $iter
+    $iteration
+    $monitor_specrun_wrapper
+    $monitor_wrapper
+    $name
+    $need_math
+    $num
+    $obiwan
+    $path
+    $reltol
+    $size_class
+    $skipabstol
+    $skipobiwan
+    $skipreltol
+    $skiptol
+    $smarttune
+    @sources
+    $srcsource
+    $workload
+        format: raw -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.084.ref.rsf
+rawformat started at Tue Sep  6 23:04:56 2016 on "x03.recod"
+rawformat is: /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/rawformat
+rawformat: rawformat --output_format asc:csv:html --from_runspec --opts-file /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.084.ref.rsf.opts --verbose 35 /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.084.ref.rsf
+toolset: linux-suse10-amd64
+
+Stored config: Updating "notes_plat_sysinfo_005"
+Parsing flags for 483.xalancbmk base: done in 0.2044611s
+Doing flag reduction: done in 0.0027201s
+        format: flags -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.084.ref.flags.html
+        format: ASCII -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.084.ref.txt
+        format: CSV -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.084.ref.csv
+        format: HTML -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.084.ref.html, /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.084.ref.gif
+      set: fp
+
+The log for this run is in /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.084.log
+
+runspec finished at Tue Sep  6 23:04:59 2016; 3897 total seconds elapsed
