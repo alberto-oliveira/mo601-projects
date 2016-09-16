@@ -5,8 +5,6 @@ import sys
 import argparse
 import subprocess
 
-sys.path.append("/home/alberto/disciplinas/mo601/tools/SPEC/install/bin")
-
 bm_list = ["400.perlbench",
            "401.bzip2",
            "403.gcc",
@@ -37,11 +35,6 @@ bm_list = ["400.perlbench",
            "482.sphinx3",
            "483.xalancbmk"]
 
-runspec_list = ["runspec", "--config", "/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-inscount-linux64-amd64-gcc43+.cfg",
-              "--size", "ref", "--iterations", "1", "--noreportable", "--verbose", "35"]
-runspec_dir = "/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/"
-stdout_dir = "/home/alberto/disciplinas/mo601/mo601-projects/project1/stdout/"
-
 
 def print_benchmarks():
 
@@ -51,12 +44,15 @@ def print_benchmarks():
         print "{0:02d} -> {1:s}".format(i, bmn)
     print "    ###      "
 
-def call_benchmark_run(snum, enum):
+def call_pin_benchmark_run(snum, enum, configpath, stdoutdir):
+
+    runspec_list = ["runspec", "--config", configpath, "--size", "ref", "--iterations",
+                    "1", "--noreportable", "--verbose", "35"]
 
     for i in range(snum, enum):
 
         bmname = bm_list[i]
-        stdoutname = "{0:s}output_{1:s}.out".format(stdout_dir, bmname)
+        stdoutname = "{0:s}output_{1:s}.out".format(stdoutdir, bmname)
         stdoutf = open(stdoutname, 'w')
         #print runspec_list + [bmname]
         #print stdoutname
@@ -81,8 +77,12 @@ if __name__ == "__main__":
     parser.add_argument("snum", type=int, help="Starting BM number",
                         choices=range(0, 29))
 
-    parser.add_argument("enum", type=int, help="Starting BM number",
+    parser.add_argument("enum", type=int, help="Ending BM number",
                         choices=range(1, 30))
+
+    parser.add_argument("configpath", type=str, help="Path to the SPEC config file")
+
+    parser.add_argument("stdoutdir", type=str, help="Directory to store stdout files of benchmark runs")
 
     parser.add_argument("-p", "--printbm", help="Print benchmark list",
                         action='store_true', default=False)
@@ -91,7 +91,11 @@ if __name__ == "__main__":
 
     snum = args.snum
     enum = args.enum
+    configpath = args.configpath
+    stdoutdir = args.stdoutdir
     printbm = args.printbm
+
+    if stdoutdir[-1] != "/": stdoutdir += "/"
 
     if printbm:
         print_benchmarks()
@@ -100,4 +104,4 @@ if __name__ == "__main__":
         if snum >= enum:
             enum = snum + 1
 
-        call_benchmark_run(snum, enum)
+        call_pin_benchmark_run(snum, enum, configpath, stdoutdir)

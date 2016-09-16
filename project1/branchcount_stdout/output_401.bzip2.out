@@ -1,0 +1,561 @@
+runspec v6674 - Copyright 1999-2011 Standard Performance Evaluation Corporation
+Using 'linux-suse10-amd64' tools
+Reading MANIFEST... 22481 files
+Loading runspec modules................
+runspec v6674 started at Tue Sep 13 15:51:40 2016 on "eddie"
+runspec is: /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec
+runspec: runspec --config /home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-branchcount-linux64-amd64-gcc43+.cfg --size ref --iterations 1 --noreportable --verbose 35 401.bzip2
+toolset: linux-suse10-amd64
+
+Locating benchmarks...found 31 benchmarks in 6 benchsets.
+Reading config file '/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-branchcount-linux64-amd64-gcc43+.cfg'
+Running "specperl /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo" to gather system information.
+Read 61 total lines from the sysinfo program.
+Read 60 usable lines from the sysinfo program.
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec line 169):
+ - No variables changed
+ - Variables available for interpolation that were not in the last list:
+    (From config) $OS = "unix"
+    (From config) $absolutely_no_locking = "0"
+    (From config) $action = "validate"
+    (From config) $allow_extension_override = "0"
+    (From config) $backup_config = "1"
+    (From config) $basepeak = "yes"
+    (From config) $benchdir = "benchspec"
+    (From config) @bind = ( numactl -m 0 --physcpubind=0, numactl -m 0 --physcpubind=1, numactl -m 0 --physcpubind=2, numactl -m 0 --physcpubind=3, numactl -m 1 --physcpubind=4, numactl -m 1 --physcpubind=5, numactl -m 1 --physcpubind=6, numactl -m 1 --physcpubind=7 )
+    (From config) $bindir = "exe"
+    (From config) $build_in_build_dir = "1"
+    (From config) $builddir = "build"
+    (From config) $bundleaction = ""
+    (From config) $bundlename = ""
+    (From config) $calctol = "0"
+    (From config) $cfidx_flagsurl0 = "44"
+    (From config) $cfidx_flagsurl1 = "45"
+    (From config) $cfidx_hw_avail = "49"
+    (From config) $cfidx_license_num = "50"
+    (From config) $cfidx_test_sponsor = "51"
+    (From config) $cfidx_tester = "52"
+    (From config) $check_integrity = "1"
+    (From config) $check_md5 = "1"
+    (From config) $check_version = "1"
+    (From config) $command_add_redirect = "0"
+    (From config) $commanderrfile = "speccmds.err"
+    (From config) $commandfile = "speccmds.cmd"
+    (From config) $commandoutfile = "speccmds.out"
+    (From config) $commandstdoutfile = "speccmds.stdout"
+    (From config) $compareerrfile = "compare.err"
+    (From config) $comparefile = "compare.cmd"
+    (From config) $compareoutfile = "compare.out"
+    (From config) $comparestdoutfile = "compare.stdout"
+    (From config) $compile_error = "0"
+    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-branchcount-linux64-amd64-gcc43+.cfg"
+    (From config) $configdir = "config"
+    (From config) $configpath = "/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-branchcount-linux64-amd64-gcc43+.cfg"
+    (From config) $copies = "1"
+    (From config) $datadir = "data"
+    (From config) $default_size = "ref"
+    (From config) $delay = "0"
+    (From config) $deletebinaries = "0"
+    (From config) $deletework = "0"
+    (From config) $difflines = "10"
+    (From config) $dirprot = "511"
+    (From config) $endian = "12345678"
+    (From config) $env_vars = "0"
+    (From config) $exitvals = "spec_exit"
+    (From config) $expand_notes = "1"
+    (From config) $expid = ""
+    (From config) $ext = "gcc46-64bit"
+    (From config) $fake = "0"
+    (From config) $feedback = "1"
+    (From config) @files_read = ( /home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-branchcount-linux64-amd64-gcc43+.cfg, specperl $[top]/Docs/sysinfo )
+    (From config) $flag_url_base = "http://www.spec.org/auto/cpu2006/flags/"
+    (From config) @flagsurl = ( /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml )
+    (From config) $flagsurl0 = "/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml"
+    (From config) $flagsurl1 = "/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml"
+    (From config) $help = "0"
+    (From config) $http_proxy = ""
+    (From config) $http_timeout = "30"
+    (From config) $hw_avail = "Dec-9999"
+    (From config) $ignore_errors = "yes"
+    (From config) $ignore_sigint = "0"
+    (From config) $info_wrap_columns = "50"
+    (From config) $inputdir = "input"
+    (From config) $iterations = "1"
+    (From config) $keeptmp = "0"
+    (From config) $license_num = "0"
+    (From config) $line_width = "0"
+    (From config) $locking = "1"
+    (From config) $log = "CPU2006"
+    (From config) $log_line_width = "0"
+    (From config) $log_timestamp = "0"
+    (From config) $mach = "default"
+    (From config) $mail_reports = "all"
+    (From config) $mailcompress = "0"
+    (From config) $mailmethod = "smtp"
+    (From config) $mailport = "25"
+    (From config) $mailserver = "127.0.0.1"
+    (From config) $mailto = ""
+    (From config) $make = "specmake"
+    (From config) $make_no_clobber = "0"
+    (From config) $makeflags = ""
+    (From config) $max_active_compares = "0"
+    (From config) $mean_anyway = "0"
+    (From config) $min_report_runs = "3"
+    (From config) $minimize_builddirs = "0"
+    (From config) $minimize_rundirs = "0"
+    (From config) $nc = ""
+    (From config) $nc_is_cd = "0"
+    (From config) $nc_is_na = "0"
+    (From config) $no_input_handler = "close"
+    (From config) $no_monitor = ""
+    (From config) $note_preenv = "0"
+    (From config) $notes_wrap_columns = "0"
+    (From config) $notes_wrap_indent = "  "
+    (From config) $os_exe_ext = ""
+    (From config) $output = "asc"
+    (From config) $output_format = "asc,csv,html"
+    (From config) $output_root = ""
+    (From config) $outputdir = "output"
+    (From config) $parallel_setup = "1"
+    (From config) $parallel_setup_prefork = ""
+    (From config) $parallel_setup_type = "fork"
+    (From config) $parallel_test = "0"
+    (From config) $parallel_test_submit = "0"
+    (From config) $parallel_test_workloads = ""
+    (From config) $plain_train = "1"
+    (From config) $power = "0"
+    (From config) $preenv = "1"
+    (From config) $prefix = ""
+    (From config) $ranks = "1"
+    (From config) $rate = "0"
+    (From config) @rawformat_opts = ( --verbose, 35 )
+    (From config) $realuser = "alberto"
+    (From config) $rebuild = "0"
+    (From config) $reftime = "reftime"
+    (From config) $reportable = "0"
+    (From config) $resultdir = "result"
+    (From config) $review = "0"
+    (From config) $run = "all"
+    (From config) $rundir = "run"
+    (From config) $runspec = "/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec --config /home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-branchcount-linux64-amd64-gcc43+.cfg --size ref --iterations 1 --noreportable --verbose 35 401.bzip2"
+    (From config) $safe_eval = "1"
+    (From config) $section_specifier_fatal = "1"
+    (From config) $sendmail = "/usr/sbin/sendmail"
+    (From config) $setpgrp_enabled = "1"
+    (From config) $setprocgroup = "1"
+    (From config) $setup_error = "0"
+    (From config) $shrate = "0"
+    (From config) $sigint = "2"
+    (From config) $size = "ref"
+    (From config) $specdiff = "specdiff"
+    (From config) $specmake = "Makefile.YYYtArGeTYYYspec"
+    (From config) $specrun = "/home/alberto/disciplinas/mo601/tools/SPEC/install/specinvoke"
+    (From config) $speed = "0"
+    (From config) $srcalt = ""
+    (From config) $srcdir = "src"
+    (From config) $stagger = "10"
+    (From config) $strict_rundir_verify = "1"
+    (From config) $submit_default = "/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin -t /home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/source/tools/ManualExamples/obj-intel64/branchcount.so -o /home/alberto/disciplinas/mo601/mo601-projects/project1/branchcount_out/"$benchmark"_"$workload"_branchcount.out -- $command"
+    (From config) $sysinfo_program = "specperl /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo"
+    (From config) $table = "1"
+    (From config) $teeout = "yes"
+    (From config) $teerunout = "yes"
+    (From config) $test_date = "Sep-2016"
+    (From config) $test_sponsor = "Test Sponsor (Optional, defaults to hw_vendor)"
+    (From config) $tester = "(Optional, defaults to hw_vendor)"
+    (From config) $top = "/home/alberto/disciplinas/mo601/tools/SPEC/install"
+    (From config) $train_with = "train"
+    (From config) $tune = "base"
+    (From config) $uid = "10103"
+    (From config) $unbuffer = "1"
+    (From config) $update-flags = "0"
+    (From config) $use_submit_for_speed = "yes"
+    (From config) $username = "alberto"
+    (From config) @valid_actions = ( buildsetup, runsetup, setup, build, only_run, onlyrun, run, validate, configpp, clean, realclean, trash, clobber, scrub, interclean, report, makebundle, usebundle )
+    (From config) @valid_tunes = ( base, peak )
+    (From config) $vendor = "anon"
+    (From config) $vendor_makefiles = "0"
+    (From config) $verbose = "35"
+    (From config) $version = "0"
+    (From config) $version_url = "http://www.spec.org/auto/cpu2006/current_version"
+    (From config) $worklist = "list"
+ - No deleted variables
+  '401.bzip2' added
+Retrieving flags file (/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml)...
+Retrieving flags file (/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml)...
+Benchmarks selected: 401.bzip2
+Compiling Binaries
+
+------------------------------------------------------------------------
+  Up to date 401.bzip2 base gcc46-64bit default
+
+
+Setting Up Run Directories
+  Setting up 401.bzip2 ref base gcc46-64bit default: Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000/input.combined
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000/input.program
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000/chicken.jpg
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000/control
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000/input.source
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000/liberty.jpg
+Doing REALLY slow MD5 tests for /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000/text.html
+existing (run_base_ref_gcc46-64bit.0000)
+
+-----------------------------------
+Running Benchmarks
+
+-----------------------------------
+  Running 401.bzip2 ref base gcc46-64bit default
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchmark.pm line 3064):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $basepeak = "1"
+    (From config) @files_read = ( /home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-branchcount-linux64-amd64-gcc43+.cfg, specperl $[top]/Docs/sysinfo, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml )
+    (From config) $realuser = "your name here"
+    (From config) $specrun = "specinvoke"
+ - Variables available for interpolation that were not in the last list:
+    (From config) @BENCHLANG = ( C )
+    (From config) $CC = "/usr/bin/gcc"
+    (From config) $COPTIMIZE = "-O2 -fno-strict-aliasing"
+    (From config) $CXX = "/usr/bin/g++"
+    (From config) $CXXOPTIMIZE = "-O2 -fno-strict-aliasing"
+    (From config) @EXEBASE = ( bzip2 )
+    (From config) $FC = "/usr/bin/gfortran"
+    (From config) $FOPTIMIZE = "-O2 -fno-strict-aliasing"
+    (From config) $FPBASE = "yes"
+    (From config) $PORTABILITY = "-DSPEC_CPU_LP64"
+    (From config) $abstol = ""
+    (From config) @allBENCHLANG = ( C )
+    (From config) $baggage = ""
+    (From config) @base_exe = ( bzip2 )
+    (From config) $baseexe = "bzip2"
+    (From config) $benchmark = "401.bzip2"
+    (From config) @benchset_list = (  )
+    (From config) $binary = ""
+    (From config) @bundle_files = (  )
+    (From config) $cfidx_hw_cpu_char = "92"
+    (From config) $cfidx_hw_cpu_mhz = "93"
+    (From config) $cfidx_hw_cpu_name = "215"
+    (From config) $cfidx_hw_disk = "216"
+    (From config) $cfidx_hw_fpu = "94"
+    (From config) $cfidx_hw_memory001 = "217"
+    (From config) $cfidx_hw_memory002 = "218"
+    (From config) $cfidx_hw_model = "91"
+    (From config) $cfidx_hw_nchips = "219"
+    (From config) $cfidx_hw_ncores = "95"
+    (From config) $cfidx_hw_ncoresperchip = "96"
+    (From config) $cfidx_hw_ncpuorder = "98"
+    (From config) $cfidx_hw_nthreadspercore = "97"
+    (From config) $cfidx_hw_ocache = "102"
+    (From config) $cfidx_hw_other = "104"
+    (From config) $cfidx_hw_pcache = "99"
+    (From config) $cfidx_hw_scache = "100"
+    (From config) $cfidx_hw_tcache = "101"
+    (From config) $cfidx_hw_vendor = "103"
+    (From config) $cfidx_notes_os_000 = "128"
+    (From config) $cfidx_notes_plat_sysinfo_000 = "165"
+    (From config) $cfidx_notes_plat_sysinfo_005 = "166"
+    (From config) $cfidx_notes_plat_sysinfo_010 = "167"
+    (From config) $cfidx_notes_plat_sysinfo_015 = "168"
+    (From config) $cfidx_notes_plat_sysinfo_020 = "169"
+    (From config) $cfidx_notes_plat_sysinfo_025 = "170"
+    (From config) $cfidx_notes_plat_sysinfo_030 = "171"
+    (From config) $cfidx_notes_plat_sysinfo_035 = "172"
+    (From config) $cfidx_notes_plat_sysinfo_040 = "173"
+    (From config) $cfidx_notes_plat_sysinfo_045 = "174"
+    (From config) $cfidx_notes_plat_sysinfo_050 = "175"
+    (From config) $cfidx_notes_plat_sysinfo_055 = "176"
+    (From config) $cfidx_notes_plat_sysinfo_060 = "177"
+    (From config) $cfidx_notes_plat_sysinfo_065 = "178"
+    (From config) $cfidx_notes_plat_sysinfo_070 = "179"
+    (From config) $cfidx_notes_plat_sysinfo_075 = "180"
+    (From config) $cfidx_notes_plat_sysinfo_080 = "181"
+    (From config) $cfidx_notes_plat_sysinfo_085 = "182"
+    (From config) $cfidx_notes_plat_sysinfo_090 = "183"
+    (From config) $cfidx_notes_plat_sysinfo_095 = "184"
+    (From config) $cfidx_notes_plat_sysinfo_100 = "185"
+    (From config) $cfidx_notes_plat_sysinfo_105 = "186"
+    (From config) $cfidx_notes_plat_sysinfo_110 = "187"
+    (From config) $cfidx_notes_plat_sysinfo_115 = "188"
+    (From config) $cfidx_notes_plat_sysinfo_120 = "189"
+    (From config) $cfidx_notes_plat_sysinfo_125 = "190"
+    (From config) $cfidx_notes_plat_sysinfo_130 = "191"
+    (From config) $cfidx_notes_plat_sysinfo_135 = "192"
+    (From config) $cfidx_notes_plat_sysinfo_140 = "193"
+    (From config) $cfidx_notes_plat_sysinfo_145 = "194"
+    (From config) $cfidx_notes_plat_sysinfo_150 = "195"
+    (From config) $cfidx_notes_plat_sysinfo_155 = "196"
+    (From config) $cfidx_notes_plat_sysinfo_160 = "197"
+    (From config) $cfidx_notes_plat_sysinfo_165 = "198"
+    (From config) $cfidx_notes_plat_sysinfo_170 = "199"
+    (From config) $cfidx_notes_plat_sysinfo_175 = "200"
+    (From config) $cfidx_notes_plat_sysinfo_180 = "201"
+    (From config) $cfidx_notes_plat_sysinfo_185 = "202"
+    (From config) $cfidx_notes_plat_sysinfo_190 = "203"
+    (From config) $cfidx_notes_plat_sysinfo_195 = "204"
+    (From config) $cfidx_notes_plat_sysinfo_200 = "205"
+    (From config) $cfidx_notes_plat_sysinfo_205 = "206"
+    (From config) $cfidx_notes_plat_sysinfo_210 = "207"
+    (From config) $cfidx_notes_plat_sysinfo_215 = "208"
+    (From config) $cfidx_notes_plat_sysinfo_220 = "209"
+    (From config) $cfidx_notes_plat_sysinfo_225 = "210"
+    (From config) $cfidx_notes_plat_sysinfo_230 = "211"
+    (From config) $cfidx_notes_plat_sysinfo_235 = "212"
+    (From config) $cfidx_notes_plat_sysinfo_240 = "213"
+    (From config) $cfidx_notes_plat_sysinfo_245 = "214"
+    (From config) $cfidx_notes_submit_000 = "125"
+    (From config) $cfidx_notes_submit_005 = "126"
+    (From config) $cfidx_prepared_by = "220"
+    (From config) $cfidx_sw_avail = "117"
+    (From config) $cfidx_sw_base_ptrsize = "119"
+    (From config) $cfidx_sw_compiler = "111"
+    (From config) $cfidx_sw_file = "221"
+    (From config) $cfidx_sw_os001 = "222"
+    (From config) $cfidx_sw_os002 = "223"
+    (From config) $cfidx_sw_other = "118"
+    (From config) $cfidx_sw_peak_ptrsize = "120"
+    (From config) $cfidx_sw_state = "224"
+    (From config) $clean_between_builds = "no"
+    (From config) $command = "..ÿrun_base_ref_gcc46-64bit.0000ÿbzip2_base.gcc46-64bit input.source 280"
+    (From config) $commandexe = "..ÿrun_base_ref_gcc46-64bit.0000ÿbzip2_base.gcc46-64bit"
+    (From config) $compwhite = ""
+    (From config) @copylist = ( 1 )
+    (From config) $copynum = "0"
+    (From config) $dependent_workloads = "0"
+    (From config) @dirlist = ( Spec::Listfile::entry=HASH(0x41a1428) )
+    (From config) $exemd5 = "76e1a680e19674de2a213cf6c0453968"
+    (From config) @extlist = ( gcc46-64bit )
+    (From config) $fdocommand = ""
+    (From config) $floatcompare = ""
+    (From config) $hw_cpu_char = ""
+    (From config) $hw_cpu_mhz = "9999"
+    (From config) $hw_cpu_name = "Intel Xeon E5620"
+    (From config) $hw_disk = "81 TB  add more disk info here"
+    (From config) $hw_fpu = "Integrated"
+    (From config) $hw_memory001 = "47.164 GB fixme: If using DDR3, format is:"
+    (From config) $hw_memory002 = "'N GB (M x N GB nRxn PCn-nnnnnR-n, ECC)'"
+    (From config) $hw_model = "System Model Name"
+    (From config) $hw_nchips = "2"
+    (From config) $hw_ncores = "number of cores enabled"
+    (From config) $hw_ncoresperchip = "number of cores manufactured into each chip"
+    (From config) $hw_ncpuorder = "1,2 chips"
+    (From config) $hw_nthreadspercore = "number of threads enabled per core"
+    (From config) $hw_ocache = "None"
+    (From config) $hw_other = "None"
+    (From config) $hw_pcache = "9999 KB I + 9999 KB D on chip per core"
+    (From config) $hw_scache = "9999 KB I+D on chip per core"
+    (From config) $hw_tcache = "9999 MB I+D on chip per chip"
+    (From config) $hw_vendor = "System Vendor"
+    (From config) $ignorecase = ""
+    (From hash) $iter = "0"
+    (From config) $iteration = "-1"
+    (From config) @iterlist = ( 1 )
+    (From config) $logname = "/home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.094.log"
+    (From config) $lognum = "094"
+    (From config) @machlist = ( default )
+    (From config) $monitor_specrun_wrapper = ""
+    (From config) $monitor_wrapper = ""
+    (From config) $name = "bzip2"
+    (From config) $need_math = ""
+    (From config) $notes_os_000 = "'ulimit -s unlimited' was used to set environment stack size"
+    (From config) $notes_plat_sysinfo_000 = " Sysinfo program /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo"
+    (From config) $notes_plat_sysinfo_005 = " $Rev: 6775 $ $Date:: 2011-08-16 #$ 8787f7622badcf24e01c368b1db4377c"
+    (From config) $notes_plat_sysinfo_010 = " running on eddie Tue Sep 13 15:51:42 2016"
+    (From config) $notes_plat_sysinfo_015 = ""
+    (From config) $notes_plat_sysinfo_020 = " This section contains SUT (System Under Test) info as seen by"
+    (From config) $notes_plat_sysinfo_025 = " some common utilities.  To remove or add to this section, see:"
+    (From config) $notes_plat_sysinfo_030 = "   http://www.spec.org/cpu2006/Docs/config.html#sysinfo"
+    (From config) $notes_plat_sysinfo_035 = ""
+    (From config) $notes_plat_sysinfo_040 = " From /proc/cpuinfo"
+    (From config) $notes_plat_sysinfo_045 = "    model name : Intel(R) Xeon(R) CPU E5620 @ 2.40GHz"
+    (From config) $notes_plat_sysinfo_050 = "       2 "physical id"s (chips)"
+    (From config) $notes_plat_sysinfo_055 = "       16 "processors""
+    (From config) $notes_plat_sysinfo_060 = "    cores, siblings (Caution: counting these is hw and system dependent.  The"
+    (From config) $notes_plat_sysinfo_065 = "    following excerpts from /proc/cpuinfo might not be reliable.  Use with"
+    (From config) $notes_plat_sysinfo_070 = "    caution.)"
+    (From config) $notes_plat_sysinfo_075 = "       cpu cores : 4"
+    (From config) $notes_plat_sysinfo_080 = "       siblings  : 8"
+    (From config) $notes_plat_sysinfo_085 = "       physical 0: cores 0 1 9 10"
+    (From config) $notes_plat_sysinfo_090 = "       physical 1: cores 0 1 9 10"
+    (From config) $notes_plat_sysinfo_095 = "    cache size : 12288 KB"
+    (From config) $notes_plat_sysinfo_100 = ""
+    (From config) $notes_plat_sysinfo_105 = " From /proc/meminfo"
+    (From config) $notes_plat_sysinfo_110 = "    MemTotal:       49454652 kB"
+    (From config) $notes_plat_sysinfo_115 = "    HugePages_Total:       0"
+    (From config) $notes_plat_sysinfo_120 = "    Hugepagesize:       2048 kB"
+    (From config) $notes_plat_sysinfo_125 = ""
+    (From config) $notes_plat_sysinfo_130 = " /usr/bin/lsb_release -d"
+    (From config) $notes_plat_sysinfo_135 = "    Ubuntu 12.04.5 LTS"
+    (From config) $notes_plat_sysinfo_140 = ""
+    (From config) $notes_plat_sysinfo_145 = " From /etc/*release* /etc/*version*"
+    (From config) $notes_plat_sysinfo_150 = "    debian_version: wheezy/sid"
+    (From config) $notes_plat_sysinfo_155 = "    os-release:"
+    (From config) $notes_plat_sysinfo_160 = "       NAME="Ubuntu""
+    (From config) $notes_plat_sysinfo_165 = "       VERSION="12.04.5 LTS, Precise Pangolin""
+    (From config) $notes_plat_sysinfo_170 = "       ID=ubuntu"
+    (From config) $notes_plat_sysinfo_175 = "       ID_LIKE=debian"
+    (From config) $notes_plat_sysinfo_180 = "       PRETTY_NAME="Ubuntu precise (12.04.5 LTS)""
+    (From config) $notes_plat_sysinfo_185 = "       VERSION_ID="12.04""
+    (From config) $notes_plat_sysinfo_190 = ""
+    (From config) $notes_plat_sysinfo_195 = " uname -a:"
+    (From config) $notes_plat_sysinfo_200 = "    Linux eddie 3.5.0-54-generic #81~precise1-Ubuntu SMP Tue Jul 15 04:02:22 UTC"
+    (From config) $notes_plat_sysinfo_205 = "    2014 x86_64 x86_64 x86_64 GNU/Linux"
+    (From config) $notes_plat_sysinfo_210 = ""
+    (From config) $notes_plat_sysinfo_215 = " run-level 2 Jul 18 09:27"
+    (From config) $notes_plat_sysinfo_220 = ""
+    (From config) $notes_plat_sysinfo_225 = " SPEC is set to: /home/alberto/disciplinas/mo601/tools/SPEC/install"
+    (From config) $notes_plat_sysinfo_230 = "    Filesystem                    Type  Size  Used Avail Use% Mounted on"
+    (From config) $notes_plat_sysinfo_235 = "    storage.recod:/l/home/alberto nfs    81T   32T   49T  40% /home/alberto"
+    (From config) $notes_plat_sysinfo_240 = ""
+    (From config) $notes_plat_sysinfo_245 = " (End of data from sysinfo program)"
+    (From config) $notes_submit_000 = "'numactl' was used to bind copies to the cores."
+    (From config) $notes_submit_005 = "See the configuration file for details."
+    (From config) $num = "401"
+    (From config) $obiwan = ""
+    (From config) $optmd5 = "1b9557bf1ec306b770684be5bd6eaaf6"
+    (From config) $path = "/home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2"
+    (From config) @powermeterlist = (  )
+    (From config) $prepared_by = "alberto  (is never output, only tags rawfile)"
+    (From config) $ref_added = "config.pl:1183"
+    (From config) $reltol = ""
+    (From config) $size_class = "ref"
+    (From config) @sizelist = ( ref )
+    (From config) $skipabstol = ""
+    (From config) $skipobiwan = ""
+    (From config) $skipreltol = ""
+    (From config) $skiptol = ""
+    (From config) $smarttune = "base"
+    (From config) @sources = ( spec.c, blocksort.c, bzip2.c, bzlib.c, compress.c, crctable.c, decompress.c, huffman.c, randtable.c )
+    (From config) $srcsource = "/home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/src"
+    (From config) $sw_avail = "Mar-2011"
+    (From config) $sw_base_ptrsize = "64-bit"
+    (From config) $sw_compiler = "gcc, g++ & gfortran 4.6.0"
+    (From config) $sw_file = "nfs"
+    (From config) $sw_os001 = "Ubuntu 12.04.5 LTS"
+    (From config) $sw_os002 = "3.5.0-54-generic"
+    (From config) $sw_other = "None"
+    (From config) $sw_peak_ptrsize = "64-bit"
+    (From config) $sw_state = "Run level 2 (add definition here)"
+    (From config) @tempmeterlist = (  )
+    (From config) @tunelist = ( base )
+    (From hash) $workload = "0"
+ - Variables from the previous list that are NO LONGER AVAILABLE:
+    $config
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchmark.pm line 3064):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $command = "..ÿrun_base_ref_gcc46-64bit.0000ÿbzip2_base.gcc46-64bit chicken.jpg 30"
+    (From hash) $workload = "1"
+ - No new variables
+ - No deleted variables
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchmark.pm line 3064):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $command = "..ÿrun_base_ref_gcc46-64bit.0000ÿbzip2_base.gcc46-64bit liberty.jpg 30"
+    (From hash) $workload = "2"
+ - No new variables
+ - No deleted variables
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchmark.pm line 3064):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $command = "..ÿrun_base_ref_gcc46-64bit.0000ÿbzip2_base.gcc46-64bit input.program 280"
+    (From hash) $workload = "3"
+ - No new variables
+ - No deleted variables
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchmark.pm line 3064):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $command = "..ÿrun_base_ref_gcc46-64bit.0000ÿbzip2_base.gcc46-64bit text.html 280"
+    (From hash) $workload = "4"
+ - No new variables
+ - No deleted variables
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchmark.pm line 3064):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $command = "..ÿrun_base_ref_gcc46-64bit.0000ÿbzip2_base.gcc46-64bit input.combined 200"
+    (From hash) $workload = "5"
+ - No new variables
+ - No deleted variables
+**WARNING: environment variable 'TERMCAP' contains embedded CR or LF; they will be converted to spaces
+Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
+/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
+Start command: Tue Sep 13 15:51:46 2016 (1473792706)
+Stop command: Tue Sep 13 17:43:12 2016 (1473799392)
+Elapsed time for command: 01:51:26 (6686)
+Workload elapsed time (0:1) = 1212.471901 seconds
+Workload elapsed time (0:2) = 469.673751 seconds
+Workload elapsed time (0:3) = 810.461483 seconds
+Workload elapsed time (0:4) = 1509.359622 seconds
+Workload elapsed time (0:5) = 1726.122899 seconds
+Workload elapsed time (0:6) = 950.482306 seconds
+Copy 0 of 401.bzip2 (base ref) run 1 finished at Tue Sep 13 17:43:04 2016.  Total elapsed time: 6678.571962
+Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd'
+/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/401.bzip2/run/run_base_ref_gcc46-64bit.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd
+Start command: Tue Sep 13 17:43:12 2016 (1473799392)
+Stop command: Tue Sep 13 17:43:16 2016 (1473799396)
+Elapsed time for command: 00:00:04 (4)
+ Success 401.bzip2 base ref ratio=1.44, runtime=6678.572120, power=0.00w, temp=0.00 deg, humidity=0.00%
+Success: 1x401.bzip2
+Producing Raw Reports
+mach: default
+  ext: gcc46-64bit
+    size: ref
+      set: int
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchset.pm line 458):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $exemd5 = "3438b804958a782a961ac561c8ab7251"
+    (From config) $optmd5 = "1dd3c4dffba6bd0ef9212be66716e89c"
+ - Variables available for interpolation that were not in the last list:
+    (From config) $CPORTABILITY = "-DSPEC_CPU_LINUX"
+    (From config) $CXXPORTABILITY = "-DSPEC_CPU_LINUX"
+    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project1/src/Pintools-branchcount-linux64-amd64-gcc43+.cfg"
+ - Variables from the previous list that are NO LONGER AVAILABLE:
+    @BENCHLANG
+    @EXEBASE
+    $FPBASE
+    $abstol
+    @allBENCHLANG
+    @base_exe
+    $baseexe
+    $benchmark
+    $binary
+    $clean_between_builds
+    $command
+    $commandexe
+    $compwhite
+    $copynum
+    $dependent_workloads
+    @dirlist
+    $fdocommand
+    $floatcompare
+    $ignorecase
+    $iter
+    $iteration
+    $monitor_specrun_wrapper
+    $monitor_wrapper
+    $name
+    $need_math
+    $num
+    $obiwan
+    $path
+    $reltol
+    $size_class
+    $skipabstol
+    $skipobiwan
+    $skipreltol
+    $skiptol
+    $smarttune
+    @sources
+    $srcsource
+    $workload
+        format: raw -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.094.ref.rsf
+rawformat started at Tue Sep 13 17:43:15 2016 on "eddie"
+rawformat is: /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/rawformat
+rawformat: rawformat --output_format asc:csv:html --from_runspec --opts-file /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.094.ref.rsf.opts --verbose 35 /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.094.ref.rsf
+toolset: linux-suse10-amd64
+
+Stored config: Updating "notes_plat_sysinfo_005"
+Parsing flags for 401.bzip2 base: done in 0.0627079s
+Doing flag reduction: done in 0.0014801s
+        format: flags -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.094.ref.flags.html
+        format: ASCII -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.094.ref.txt
+        format: CSV -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.094.ref.csv
+        format: HTML -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.094.ref.html, /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.094.ref.gif
+      set: fp
+
+The log for this run is in /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.094.log
+
+runspec finished at Tue Sep 13 17:43:18 2016; 6698 total seconds elapsed
