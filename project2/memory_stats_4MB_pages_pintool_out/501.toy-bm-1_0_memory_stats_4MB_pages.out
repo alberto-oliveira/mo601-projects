@@ -1,0 +1,123 @@
+ITLB:
+   Load Hits:           87656
+   Load Misses:             3
+   Load Accesses:       87659
+   Load Miss Rate:      0.00%
+
+  Store Hits:               0
+  Store Misses:             0
+  Store Accesses:           0
+  Store Miss Rate:       nan%
+
+  Total Hits:           87656
+  Total Misses:             3
+  Total Accesses:       87659
+  Total Miss Rate:      0.00%
+  Flushes:                  0
+  Stat Resets:              0
+
+DTLB:
+   Load Hits:           32951
+   Load Misses:             6
+   Load Accesses:       32957
+   Load Miss Rate:      0.02%
+
+  Store Hits:               0
+  Store Misses:             0
+  Store Accesses:           0
+  Store Miss Rate:       nan%
+
+  Total Hits:           32951
+  Total Misses:             6
+  Total Accesses:       32957
+  Total Miss Rate:      0.02%
+  Flushes:                  0
+  Stat Resets:              0
+
+L1 Instruction Cache:
+   Load Hits:           86498
+   Load Misses:          1161
+   Load Accesses:       87659
+   Load Miss Rate:      1.32%
+
+  Store Hits:               0
+  Store Misses:             0
+  Store Accesses:           0
+  Store Miss Rate:       nan%
+
+  Total Hits:           86498
+  Total Misses:          1161
+  Total Accesses:       87659
+  Total Miss Rate:      1.32%
+  Flushes:                  0
+  Stat Resets:              0
+
+L1 Data Cache:
+   Load Hits:           20751
+   Load Misses:          2135
+   Load Accesses:       22886
+   Load Miss Rate:      9.33%
+
+  Store Hits:            7232
+  Store Misses:          2839
+  Store Accesses:       10071
+  Store Miss Rate:     28.19%
+
+  Total Hits:           27983
+  Total Misses:          4974
+  Total Accesses:       32957
+  Total Miss Rate:     15.09%
+  Flushes:                  0
+  Stat Resets:              0
+
+L2 Unified Cache:
+   Load Hits:            1591
+   Load Misses:          1705
+   Load Accesses:        3296
+   Load Miss Rate:     51.73%
+
+  Store Hits:            2387
+  Store Misses:           452
+  Store Accesses:        2839
+  Store Miss Rate:     15.92%
+
+  Total Hits:            3978
+  Total Misses:          2157
+  Total Accesses:        6135
+  Total Miss Rate:     35.16%
+  Flushes:                  0
+  Stat Resets:              0
+
+L3 Unified Cache:
+   Load Hits:               1
+   Load Misses:          1704
+   Load Accesses:        1705
+   Load Miss Rate:     99.94%
+
+  Store Hits:               1
+  Store Misses:           451
+  Store Accesses:         452
+  Store Miss Rate:     99.78%
+
+  Total Hits:               2
+  Total Misses:          2155
+  Total Accesses:        2157
+  Total Miss Rate:     99.91%
+  Flushes:                  0
+  Stat Resets:              0
+
+
+---------
+Page Table depth: 3
+Total Instructions: 87659
+
+Total Instruction Memory Access: 679
+Total Instruction TLB Miss: 3
+Total Instruction L3 Miss: 670
+Total Instruction Page Table Access: 9
+
+Total Data Memory Access: 1503
+Total Data TLB Miss: 6
+Total Data L3 Miss: 1485
+Total Data Page Table Access: 18
+

@@ -2,13 +2,13 @@ runspec v6674 - Copyright 1999-2011 Standard Performance Evaluation Corporation
 Using 'linux-suse10-amd64' tools
 Reading MANIFEST... 22481 files
 Loading runspec modules................
-runspec v6674 started at Mon Oct 17 21:10:14 2016 on "eddie"
+runspec v6674 started at Mon Oct 17 21:03:00 2016 on "eddie"
 runspec is: /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec
-runspec: runspec --config /home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg --size test --iterations 1 --noreportable --verbose 35 400.perlbench
+runspec: runspec --config /home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4MB_pages-linux64-amd64-gcc43+.cfg --size test --iterations 1 --noreportable --verbose 35 400.perlbench
 toolset: linux-suse10-amd64
 
 Locating benchmarks...found 31 benchmarks in 6 benchsets.
-Reading config file '/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg'
+Reading config file '/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4MB_pages-linux64-amd64-gcc43+.cfg'
 Running "specperl /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo" to gather system information.
 Read 61 total lines from the sysinfo program.
 Read 60 usable lines from the sysinfo program.
@@ -48,9 +48,9 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
     (From config) $compareoutfile = "compare.out"
     (From config) $comparestdoutfile = "compare.stdout"
     (From config) $compile_error = "0"
-    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg"
+    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4MB_pages-linux64-amd64-gcc43+.cfg"
     (From config) $configdir = "config"
-    (From config) $configpath = "/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg"
+    (From config) $configpath = "/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4MB_pages-linux64-amd64-gcc43+.cfg"
     (From config) $copies = "1"
     (From config) $datadir = "data"
     (From config) $default_size = "ref"
@@ -67,7 +67,7 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
     (From config) $ext = "gcc46-64bit"
     (From config) $fake = "0"
     (From config) $feedback = "1"
-    (From config) @files_read = ( /home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg, specperl $[top]/Docs/sysinfo )
+    (From config) @files_read = ( /home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4MB_pages-linux64-amd64-gcc43+.cfg, specperl $[top]/Docs/sysinfo )
     (From config) $flag_url_base = "http://www.spec.org/auto/cpu2006/flags/"
     (From config) @flagsurl = ( /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml )
     (From config) $flagsurl0 = "/home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml"
@@ -137,7 +137,7 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
     (From config) $review = "0"
     (From config) $run = "all"
     (From config) $rundir = "run"
-    (From config) $runspec = "/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec --config /home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg --size test --iterations 1 --noreportable --verbose 35 400.perlbench"
+    (From config) $runspec = "/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/runspec --config /home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4MB_pages-linux64-amd64-gcc43+.cfg --size test --iterations 1 --noreportable --verbose 35 400.perlbench"
     (From config) $safe_eval = "1"
     (From config) $section_specifier_fatal = "1"
     (From config) $sendmail = "/usr/sbin/sendmail"
@@ -155,7 +155,7 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
     (From config) $srcdir = "src"
     (From config) $stagger = "10"
     (From config) $strict_rundir_verify = "1"
-    (From config) $submit_default = "/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin -t /home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/source/tools/Memory/obj-intel64/memory_stats_4kB_pages.so -c /home/alberto/disciplinas/mo601/mo601-projects/project2/memory_stats_4kB_pages_csv/"$benchmark"_"$workload"_memory_stats_4kB_pages.csv -o /home/alberto/disciplinas/mo601/mo601-projects/project2/memory_stats_4kB_pages_pintool_out/"$benchmark"_"$workload"_memory_stats_4kB_pages.out  -b "$benchmark"_"$workload" -- $command"
+    (From config) $submit_default = "/home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/pin -t /home/alberto/disciplinas/mo601/tools/pin-3.0-76991-gcc-linux/source/tools/Memory/obj-intel64/memory_stats_4MB_pages.so -c /home/alberto/disciplinas/mo601/mo601-projects/project2/memory_stats_4MB_pages_csv/"$benchmark"_"$workload"_memory_stats_4MB_pages.csv -o /home/alberto/disciplinas/mo601/mo601-projects/project2/memory_stats_4MB_pages_pintool_out/"$benchmark"_"$workload"_memory_stats_4MB_pages.out  -b "$benchmark"_"$workload" -- $command"
     (From config) $sysinfo_program = "specperl /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo"
     (From config) $table = "1"
     (From config) $teeout = "yes"
@@ -1440,7 +1440,7 @@ Running Benchmarks
 Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchmark.pm line 3064):
  - Variables available for interpolation that have changed since the last list:
     (From config) $basepeak = "1"
-    (From config) @files_read = ( /home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg, specperl $[top]/Docs/sysinfo, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml )
+    (From config) @files_read = ( /home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4MB_pages-linux64-amd64-gcc43+.cfg, specperl $[top]/Docs/sysinfo, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-gcc4x-flags-revA.xml, /home/alberto/disciplinas/mo601/tools/SPEC/install/config/flags/Example-linux-platform-revA.xml )
     (From config) $realuser = "your name here"
     (From config) $specrun = "specinvoke"
  - Variables available for interpolation that were not in the last list:
@@ -1554,7 +1554,7 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
     (From config) @copylist = ( 1 )
     (From config) $copynum = "0"
     (From config) $dependent_workloads = "0"
-    (From config) @dirlist = ( Spec::Listfile::entry=HASH(0x4abbfc8) )
+    (From config) @dirlist = ( Spec::Listfile::entry=HASH(0x475c128) )
     (From config) $exemd5 = "2022c924f6e03e3bc623e928d19e63a9"
     (From config) @extlist = ( gcc46-64bit )
     (From config) $fdocommand = ""
@@ -1582,8 +1582,8 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
     (From hash) $iter = "0"
     (From config) $iteration = "-1"
     (From config) @iterlist = ( 1 )
-    (From config) $logname = "/home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.114.log"
-    (From config) $lognum = "114"
+    (From config) $logname = "/home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.113.log"
+    (From config) $lognum = "113"
     (From config) @machlist = ( default )
     (From config) $monitor_specrun_wrapper = ""
     (From config) $monitor_wrapper = ""
@@ -1592,7 +1592,7 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
     (From config) $notes_os_000 = "'ulimit -s unlimited' was used to set environment stack size"
     (From config) $notes_plat_sysinfo_000 = " Sysinfo program /home/alberto/disciplinas/mo601/tools/SPEC/install/Docs/sysinfo"
     (From config) $notes_plat_sysinfo_005 = " $Rev: 6775 $ $Date:: 2011-08-16 #$ 8787f7622badcf24e01c368b1db4377c"
-    (From config) $notes_plat_sysinfo_010 = " running on eddie Mon Oct 17 21:10:16 2016"
+    (From config) $notes_plat_sysinfo_010 = " running on eddie Mon Oct 17 21:03:02 2016"
     (From config) $notes_plat_sysinfo_015 = ""
     (From config) $notes_plat_sysinfo_020 = " This section contains SUT (System Under Test) info as seen by"
     (From config) $notes_plat_sysinfo_025 = " some common utilities.  To remove or add to this section, see:"
@@ -1718,4 +1718,93 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
 **WARNING: environment variable 'TERMCAP' contains embedded CR or LF; they will be converted to spaces
 Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/400.perlbench/run/run_base_test_gcc46-64bit.0001 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
 /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/400.perlbench/run/run_base_test_gcc46-64bit.0001 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
-Start command: Mon Oct 17 21:10:22 2016 (1476745822)
+Start command: Mon Oct 17 21:03:08 2016 (1476745388)
+Stop command: Mon Oct 17 21:09:03 2016 (1476745743)
+Elapsed time for command: 00:05:55 (355)
+Workload elapsed time (0:1) = 8.402001 seconds
+Workload elapsed time (0:2) = 7.195585 seconds
+Workload elapsed time (0:3) = 16.970818 seconds
+Workload elapsed time (0:4) = 22.828506 seconds
+Workload elapsed time (0:5) = 5.605481 seconds
+Workload elapsed time (0:6) = 6.270005 seconds
+Workload elapsed time (0:7) = 8.868503 seconds
+Workload elapsed time (0:8) = 270.593555 seconds
+Copy 0 of 400.perlbench (base test) run 1 finished at Mon Oct 17 21:08:55 2016.  Total elapsed time: 346.734454
+Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/400.perlbench/run/run_base_test_gcc46-64bit.0001 -c 1 -e compare.err -o compare.stdout -f compare.cmd'
+/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/400.perlbench/run/run_base_test_gcc46-64bit.0001 -c 1 -e compare.err -o compare.stdout -f compare.cmd
+Start command: Mon Oct 17 21:09:03 2016 (1476745743)
+Stop command: Mon Oct 17 21:09:34 2016 (1476745774)
+Elapsed time for command: 00:00:31 (31)
+ Success 400.perlbench base test ratio=-0.00, runtime=346.734647, power=0.00w, temp=0.00 deg, humidity=0.00%
+Success: 1x400.perlbench
+Producing Raw Reports
+mach: default
+  ext: gcc46-64bit
+    size: test
+      set: int
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchset.pm line 458):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $CPORTABILITY = "-DSPEC_CPU_LINUX"
+    (From config) $exemd5 = "3438b804958a782a961ac561c8ab7251"
+    (From config) $optmd5 = "1dd3c4dffba6bd0ef9212be66716e89c"
+ - Variables available for interpolation that were not in the last list:
+    (From config) $CXXPORTABILITY = "-DSPEC_CPU_LINUX"
+    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4MB_pages-linux64-amd64-gcc43+.cfg"
+ - Variables from the previous list that are NO LONGER AVAILABLE:
+    @BENCHLANG
+    $BENCH_FLAGS
+    @EXEBASE
+    $FPBASE
+    $abstol
+    @allBENCHLANG
+    @base_exe
+    $baseexe
+    $benchmark
+    $binary
+    $clean_between_builds
+    $command
+    $commandexe
+    $compwhite
+    $copynum
+    $dependent_workloads
+    @dirlist
+    $fdocommand
+    $floatcompare
+    $ignorecase
+    $iter
+    $iteration
+    $monitor_specrun_wrapper
+    $monitor_wrapper
+    $name
+    $need_math
+    $num
+    $obiwan
+    $path
+    $reltol
+    $size_class
+    $skipabstol
+    $skipobiwan
+    $skipreltol
+    $skiptol
+    $smarttune
+    @sources
+    $srcsource
+    $workload
+        format: raw -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.113.test.rsf
+rawformat started at Mon Oct 17 21:09:34 2016 on "eddie"
+rawformat is: /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/rawformat
+rawformat: rawformat --output_format asc:csv:html --from_runspec --opts-file /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.113.test.rsf.opts --verbose 35 /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.113.test.rsf
+toolset: linux-suse10-amd64
+
+Stored config: Updating "notes_plat_sysinfo_005"
+Parsing flags for 400.perlbench base: done in 0.8141730s
+Doing flag reduction: done in 0.0017381s
+        format: flags -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.113.test.flags.html
+        format: ASCII -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.113.test.txt
+        format: CSV -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.113.test.csv
+        format: HTML -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.113.test.html, /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.113.test.gif
+      set: fp
+
+The log for this run is in /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.113.log
+
+runspec finished at Mon Oct 17 21:09:38 2016; 398 total seconds elapsed
