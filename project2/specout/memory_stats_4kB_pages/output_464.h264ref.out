@@ -453,3 +453,85 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
 Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/464.h264ref/run/run_base_ref_gcc46-64bit.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
 /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/464.h264ref/run/run_base_ref_gcc46-64bit.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
 Start command: Wed Oct 19 16:45:44 2016 (1476902744)
+Stop command: Wed Oct 26 16:02:53 2016 (1477504973)
+Elapsed time for command: 167:17:09 (602229)
+Workload elapsed time (0:1) = 62996.931364 seconds
+Workload elapsed time (0:2) = 52514.79047 seconds
+Workload elapsed time (0:3) = 486709.175837 seconds
+Copy 0 of 464.h264ref (base ref) run 1 finished at Wed Oct 26 16:02:45 2016.  Total elapsed time: 602220.897671
+Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/464.h264ref/run/run_base_ref_gcc46-64bit.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd'
+/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/464.h264ref/run/run_base_ref_gcc46-64bit.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd
+Start command: Wed Oct 26 16:02:55 2016 (1477504975)
+Stop command: Wed Oct 26 16:03:11 2016 (1477504991)
+Elapsed time for command: 00:00:16 (16)
+ Success 464.h264ref base ref ratio=0.04, runtime=602220.898403, power=0.00w, temp=0.00 deg, humidity=0.00%
+Success: 1x464.h264ref
+Producing Raw Reports
+mach: default
+  ext: gcc46-64bit
+    size: ref
+      set: int
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchset.pm line 458):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $exemd5 = "3438b804958a782a961ac561c8ab7251"
+    (From config) $optmd5 = "1dd3c4dffba6bd0ef9212be66716e89c"
+ - Variables available for interpolation that were not in the last list:
+    (From config) $CPORTABILITY = "-DSPEC_CPU_LINUX"
+    (From config) $CXXPORTABILITY = "-DSPEC_CPU_LINUX"
+    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg"
+ - Variables from the previous list that are NO LONGER AVAILABLE:
+    @BENCHLANG
+    @EXEBASE
+    $FPBASE
+    $abstol
+    @allBENCHLANG
+    @base_exe
+    $baseexe
+    $benchmark
+    $clean_between_builds
+    $command
+    $commandexe
+    $compwhite
+    $copynum
+    $dependent_workloads
+    @dirlist
+    $fdocommand
+    $floatcompare
+    $ignorecase
+    $iter
+    $iteration
+    $monitor_specrun_wrapper
+    $monitor_wrapper
+    $name
+    $need_math
+    $num
+    $obiwan
+    $path
+    $reltol
+    $size_class
+    $skipabstol
+    $skipobiwan
+    $skipreltol
+    $skiptol
+    $smarttune
+    @sources
+    $srcsource
+    $workload
+        format: raw -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.127.ref.rsf
+rawformat started at Wed Oct 26 16:03:14 2016 on "eddie"
+rawformat is: /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/rawformat
+rawformat: rawformat --output_format asc:csv:html --from_runspec --opts-file /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.127.ref.rsf.opts --verbose 35 /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.127.ref.rsf
+toolset: linux-suse10-amd64
+
+Stored config: Updating "notes_plat_sysinfo_005"
+Parsing flags for 464.h264ref base: done in 0.3334460s
+Doing flag reduction: done in 0.0025511s
+        format: flags -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.127.ref.flags.html
+        format: ASCII -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.127.ref.txt
+        format: CSV -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.127.ref.csv
+        format: HTML -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.127.ref.html, /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CINT2006.127.ref.gif
+      set: fp
+
+The log for this run is in /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.127.log
+
+runspec finished at Wed Oct 26 16:03:24 2016; 602268 total seconds elapsed

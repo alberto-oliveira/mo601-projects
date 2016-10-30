@@ -457,3 +457,86 @@ Variable list for substitution (called from /home/alberto/disciplinas/mo601/tool
 Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/416.gamess/run/run_base_ref_gcc46-64bit.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q'
 /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/416.gamess/run/run_base_ref_gcc46-64bit.0000 -e speccmds.err -o speccmds.stdout -f speccmds.cmd -C -q
 Start command: Tue Oct 18 15:11:56 2016 (1476810716)
+Stop command: Tue Oct 25 18:52:39 2016 (1477428759)
+Elapsed time for command: 171:40:43 (618043)
+Workload elapsed time (0:1) = 75324.478812 seconds
+Workload elapsed time (0:2) = 66599.214578 seconds
+Workload elapsed time (0:3) = 476088.737915 seconds
+Copy 0 of 416.gamess (base ref) run 1 finished at Tue Oct 25 18:52:09 2016.  Total elapsed time: 618012.431305
+Issuing command '/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/416.gamess/run/run_base_ref_gcc46-64bit.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd'
+/home/alberto/disciplinas/mo601/tools/SPEC/install/bin/specinvoke -E -d /home/alberto/disciplinas/mo601/tools/SPEC/install/benchspec/CPU2006/416.gamess/run/run_base_ref_gcc46-64bit.0000 -c 1 -e compare.err -o compare.stdout -f compare.cmd
+Start command: Tue Oct 25 18:54:21 2016 (1477428861)
+Stop command: Tue Oct 25 18:54:40 2016 (1477428880)
+Elapsed time for command: 00:00:19 (19)
+ Success 416.gamess base ref ratio=0.03, runtime=618012.634486, power=0.00w, temp=0.00 deg, humidity=0.00%
+Success: 1x416.gamess
+Producing Raw Reports
+mach: default
+  ext: gcc46-64bit
+    size: ref
+      set: int
+      set: fp
+Variable list for substitution (called from /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/benchset.pm line 458):
+ - Variables available for interpolation that have changed since the last list:
+    (From config) $exemd5 = "c3b3b0899fabc79a531b7b96f0f284c8"
+    (From config) $optmd5 = "f8c4106c1dd2a607a2c496fa17e54226"
+ - Variables available for interpolation that were not in the last list:
+    (From config) $CPORTABILITY = "-DSPEC_CPU_CASE_FLAG -DSPEC_CPU_LINUX"
+    (From config) $config = "/home/alberto/disciplinas/mo601/mo601-projects/project2/src/Pintools-memory_stats_4kB_pages-linux64-amd64-gcc43+.cfg"
+ - Variables from the previous list that are NO LONGER AVAILABLE:
+    @BENCHLANG
+    $BENCH_FPPFLAGS
+    @EXEBASE
+    $FPBASE
+    $abstol
+    @allBENCHLANG
+    @base_exe
+    $baseexe
+    $benchmark
+    $binary
+    $clean_between_builds
+    $command
+    $commandexe
+    $compwhite
+    $copynum
+    $dependent_workloads
+    @dirlist
+    $fdocommand
+    $floatcompare
+    $ignorecase
+    $iter
+    $iteration
+    $monitor_specrun_wrapper
+    $monitor_wrapper
+    $name
+    $need_math
+    $num
+    $obiwan
+    $path
+    $reltol
+    $size_class
+    $skipabstol
+    $skipobiwan
+    $skipreltol
+    $skiptol
+    $smarttune
+    @sources
+    $srcsource
+    $workload
+        format: raw -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CFP2006.119.ref.rsf
+rawformat started at Tue Oct 25 18:55:12 2016 on "twin02-c.recod"
+rawformat is: /home/alberto/disciplinas/mo601/tools/SPEC/install/bin/rawformat
+rawformat: rawformat --output_format asc:csv:html --from_runspec --opts-file /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CFP2006.119.ref.rsf.opts --verbose 35 /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CFP2006.119.ref.rsf
+toolset: linux-suse10-amd64
+
+Stored config: Updating "notes_plat_sysinfo_005"
+Parsing flags for 416.gamess base: done in 0.0979021s
+Doing flag reduction: done in 0.0041230s
+        format: flags -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CFP2006.119.ref.flags.html
+        format: ASCII -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CFP2006.119.ref.txt
+        format: CSV -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CFP2006.119.ref.csv
+        format: HTML -> /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CFP2006.119.ref.html, /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CFP2006.119.ref.gif
+
+The log for this run is in /home/alberto/disciplinas/mo601/tools/SPEC/install/result/CPU2006.119.log
+
+runspec finished at Tue Oct 25 18:55:26 2016; 618217 total seconds elapsed
