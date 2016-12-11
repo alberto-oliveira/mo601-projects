@@ -1,0 +1,88 @@
+usage: run_disass.py [-h] [--outfile OUTFILE] [--execdir EXECDIR] dpath
+
+positional arguments:
+  dpath                 Disassembly script path (disass.sh)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --outfile OUTFILE, -o OUTFILE
+                        Output file name. Default: outfile.bin
+  --execdir EXECDIR, -e EXECDIR
+                        Path with executables. If empty, gets all executables
+                        from the system. Default is empty
+usage: run_disass_2.py [-h] [--outdir OUTDIR] [--execdir EXECDIR] dpath
+
+positional arguments:
+  dpath                 Disassembly script path (disass.sh)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --outdir OUTDIR, -o OUTDIR
+                        Output directory. Default: empty
+  --execdir EXECDIR, -e EXECDIR
+                        Path with executables. If empty, gets all executables
+                        from the system. Default is empty
+usage: run_lisc.py [-h] [--outroot OUTROOT] [--log LOG] [--csv CSV]
+                   liscdir automata execdumpdir
+
+positional arguments:
+  liscdir               directory containing lisc
+  automata              Automata path
+  execdumpdir           Path with executable dumps.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --outroot OUTROOT, -o OUTROOT
+                        Output root directory. Two folders will be created in
+                        the root: log and res. Default is ./
+  --log LOG, -l LOG     Run lisc log file. If empty, no log is created.
+                        Default is empty
+  --csv CSV, -c CSV     Run lisc csv file. Logs program size vs time to lift
+                        If empty, no csv is created. Default is empty
+usage: get_lifting_results.py [-h] [-o OUTFILE] liscresdir erresdir
+
+positional arguments:
+  liscresdir            Directory containing lisc result files
+  erresdir              Directory containing Exact Recall result files
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTFILE, --outfile OUTFILE
+                        Prefix to output file. Default is lifting_results.pdf
+usage: run_parsing.py [-h] [--outfile OUTFILE] resdir
+
+positional arguments:
+  resdir                Directory containing result files
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --outfile OUTFILE, -o OUTFILE
+                        Output file name. Default is results.csv
+usage: plot_results_automata_comparison.py [-h] [-p OUTPREFIX]
+                                           csvfiles [csvfiles ...]
+
+positional arguments:
+  csvfiles              Input csv file list
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p OUTPREFIX, --outprefix OUTPREFIX
+                        Prefix to output file. Default is output.pdf
+usage: plot_results_time.py [-h] csvfname outfprefix
+
+positional arguments:
+  csvfname    Input Csv file.
+  outfprefix  Prefix to output file.
+
+optional arguments:
+  -h, --help  show this help message and exit
+usage: combine_imap.py [-h] [-o OUTFILE]
+                       input_imap_files [input_imap_files ...]
+
+positional arguments:
+  input_imap_files      Input .imap file list
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -o OUTFILE, --outfile OUTFILE
+                        Combined .imap file name. Default is 'combined.imap'

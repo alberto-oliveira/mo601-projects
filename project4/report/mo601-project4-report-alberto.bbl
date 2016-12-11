@@ -1,0 +1,19 @@
+\begin{thebibliography}{}
+
+\bibitem[LIS ]{LISC}
+Lisc - learning instruction semantics from code generators.
+\newblock \url{http://seclab.cs.sunysb.edu/seclab/lisc/}.
+\newblock Accessed: 2016-11-17.
+
+\bibitem[Pin ]{Pin}
+Pin - a dynamic binary instrumentation tool.
+\newblock
+  \url{https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool}.
+\newblock Accessed: 2016-09-15.
+
+\bibitem[Hasabnis and Sekar 2016]{Hasabnis2014}
+Hasabnis, N. and Sekar, R. (2016).
+\newblock Lifting assembly to intermediate representation: A novel approach
+  leveraging compilers.
+
+\end{thebibliography}
